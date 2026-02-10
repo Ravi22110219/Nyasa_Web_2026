@@ -35,7 +35,7 @@ class Gallery {
         category: 'education',
         title: 'Chetana',
         date: '2025-03-15',
-        url: '../assets/images/gallery/edu.jpg',
+        url: '/assets/images/gallery/edu.jpg',
       },
       {
         id: 2,
