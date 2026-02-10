@@ -222,7 +222,7 @@ const reportsData = [
       "Complete overview of Nyasa's activities and community impact for the year 2022-23",
     year: '2022-23',
     pages: '18',
-    download: '../assets/reports/Nyasa Annual Report 2022-23.pdf',
+    download: 'assets/reports/Nyasa Annual Report 2022-23.pdf',
     date: '2022-23',
   },
   {
@@ -232,7 +232,7 @@ const reportsData = [
       "Complete overview of Nyasa's activities and community impact for the year 2023-24",
     year: '2023-24',
     pages: '33',
-    download: '../assets/reports/Nyasa Annual Report 2023-24.pdf',
+    download: 'assets/reports/Nyasa Annual Report 2023-24.pdf',
     date: '2023-24',
   },
   {
@@ -242,7 +242,7 @@ const reportsData = [
       "Complete overview of Nyasa's activities and community impact for the year 2024-25",
     year: '2024-25',
     pages: '30',
-    download: '../assets/reports/Nyasa Annual Report 2024-25.pdf',
+    download: 'assets/reports/Nyasa Annual Report 2024-25.pdf',
     date: '2024-25',
   },
 ]

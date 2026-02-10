@@ -35,7 +35,7 @@ class Gallery {
         category: 'education',
         title: 'Chetana',
         date: '2025-03-15',
-        url: '../images/gallery/edu.jpg',
+        url: 'assets/images/gallery/edu.jpg',
       },
       {
         id: 2,
@@ -49,7 +49,7 @@ class Gallery {
         category: 'education',
         title: 'Library Opening',
         date: '2024-02-10',
-        url: 'assets/images/gallery/_DSC5275.JPG',
+        url: 'assets/images/gallery/_DSC5275.jpg',
       },
 
       // Healthcare
@@ -58,21 +58,21 @@ class Gallery {
         category: 'education',
         title: 'Library',
         date: '2026-01-11',
-        url: 'assets/images/gallery/_DSC5262.JPG',
+        url: 'assets/images/gallery/_DSC5262.jpg',
       },
       {
         id: 5,
         category: 'healthcare',
         title: 'Winter Health Camp',
         date: '2025-12-16',
-        url: '../assets/images/gallery/health.JPG',
+        url: 'assets/images/gallery/health.JPG',
       },
       {
         id: 6,
         category: 'education',
         title: 'Winter Camp',
         date: '2024-02-15',
-        url: '../assets/images/gallery/winter_camp.jpg',
+        url: 'assets/images/gallery/winter_camp.JPG',
       },
 
       // Community
@@ -104,21 +104,21 @@ class Gallery {
         category: 'distribution',
         title: 'Distribution',
         date: '2024-03-18',
-        url: '../assets/images/gallery/dist.jpg',
+        url: 'assets/images/gallery/dist.jpg',
       },
       {
         id: 11,
         category: 'distribution',
         title: 'Distribution',
         date: '2024-03-01',
-        url: '../assets/images/gallery/',
+        url: 'assets/images/gallery/',
       },
       {
         id: 12,
         category: 'distribution',
         title: 'Distribution',
         date: '2024-02-12',
-        url: '../assets/images/gallery/',
+        url: 'assets/images/gallery/',
       },
 
       // Events
@@ -127,21 +127,21 @@ class Gallery {
         category: 'events',
         title: '26 January',
         date: '2024-01-26',
-        url: '../assets/images/gallery/15aug.JPG',
+        url: 'assets/images/gallery/15aug.JPG',
       },
       {
         id: 14,
         category: 'events',
         title: '26 January',
         date: '2024-01-26',
-        url: '../assets/images/gallery/15aug1.JPG',
+        url: 'assets/images/gallery/15aug1.JPG',
       },
       {
         id: 15,
         category: 'events',
         title: '26 January',
         date: '2024-01-26',
-        url: '../assets/images/gallery/15aug2.JPG',
+        url: 'assets/images/gallery/15aug2.JPG',
       },
 
       // More images for pagination
@@ -150,21 +150,21 @@ class Gallery {
         category: 'education',
         title: 'Science Fair',
         date: '2024-01-05',
-        url: '../assets/images/gallery/',
+        url: 'assets/images/gallery/',
       },
       {
         id: 17,
         category: 'healthcare',
         title: 'Eye Checkup Camp',
         date: '2023-12-20',
-        url: '../assets/images/gallery/',
+        url: 'assets/images/gallery/',
       },
       {
         id: 18,
         category: 'Winter Camp',
         title: 'Sun Sine',
         date: '2023-12-10',
-        url: '../assets/images/gallery/_D5C0127.JPG',
+        url: 'assets/images/gallery/_D5C0127.JPG',
       },
     ]
   }
