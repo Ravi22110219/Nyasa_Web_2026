@@ -42,7 +42,7 @@ class Gallery {
         category: 'education',
         title: 'ART & CRAFT',
         date: '2024-02-28',
-        url: '../assets/images/gallery/edu1.jpg',
+        url: 'assets/images/gallery/edu1.jpg',
       },
       {
         id: 3,

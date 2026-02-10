@@ -202,7 +202,7 @@ const reportsData = [
       "Complete overview of Nyasa's activities and community impact for the year 2020-21",
     year: '2020-21',
     pages: '5',
-    download: '../assets/reports/Nyasa Annual Report 2020-21.pdf',
+    download: 'assets/reports/Nyasa Annual Report 2020-21.pdf',
     date: '2020-21',
   },
   {
@@ -212,7 +212,7 @@ const reportsData = [
       "Complete overview of Nyasa's activities and community impact for the year 2021-22",
     year: '2021-22',
     pages: '9',
-    download: '../assets/reports/Nyasa Annual Report 2021-22.pdf',
+    download: 'assets/reports/Nyasa Annual Report 2021-22.pdf',
     date: '2021-22',
   },
   {
