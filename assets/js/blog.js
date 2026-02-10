@@ -197,43 +197,53 @@ const blogPostsData = [
 const reportsData = [
   {
     id: 301,
-    title: 'Annual Impact Report 2023',
+    title: 'Annual Impact Report 2020-21',
     description:
-      "Complete overview of Nyasa's activities and community impact for the year 2023",
-    year: '2023',
-    pages: '45',
-    download: 'reports/annual-report-2023.pdf',
-    date: '31-12-2023',
+      "Complete overview of Nyasa's activities and community impact for the year 2020-21",
+    year: '2020-21',
+    pages: '5',
+    download: '../assets/reports/Nyasa Annual Report 2020-21.pdf',
+    date: '2020-21',
   },
   {
     id: 302,
-    title: 'Summer Camp Analysis',
+    title: 'Annual Impact Report 2021-22',
     description:
-      'Detailed analysis and outcomes from the 2023 Summer Camp initiative',
-    year: '2023',
-    pages: '28',
-    download: 'reports/summer-camp-2023.pdf',
-    date: '30-06-2023',
+      "Complete overview of Nyasa's activities and community impact for the year 2021-22",
+    year: '2021-22',
+    pages: '9',
+    download: '../assets/reports/Nyasa Annual Report 2021-22.pdf',
+    date: '2021-22',
   },
   {
     id: 303,
-    title: 'Health Camp Report',
+    title: 'Annual Impact Report 2022-23',
     description:
-      'Report on Sanjeevani Health Camp medical services and beneficiaries',
-    year: '2023',
-    pages: '32',
-    download: 'reports/health-camp-2023.pdf',
-    date: '15-05-2023',
+      "Complete overview of Nyasa's activities and community impact for the year 2022-23",
+    year: '2022-23',
+    pages: '18',
+    download: '../assets/reports/Nyasa Annual Report 2022-23.pdf',
+    date: '2022-23',
   },
   {
     id: 304,
-    title: 'Education Program Review',
+    title: 'Annual Impact Report 2023-24',
     description:
-      "Assessment of Akanksha education program's impact on children",
-    year: '2023',
-    pages: '38',
-    download: 'reports/education-program-2023.pdf',
-    date: '20-04-2023',
+      "Complete overview of Nyasa's activities and community impact for the year 2023-24",
+    year: '2023-24',
+    pages: '33',
+    download: '../assets/reports/Nyasa Annual Report 2023-24.pdf',
+    date: '2023-24',
+  },
+  {
+    id: 304,
+    title: 'Annual Impact Report 2024-25',
+    description:
+      "Complete overview of Nyasa's activities and community impact for the year 2024-25",
+    year: '2024-25',
+    pages: '30',
+    download: '../assets/reports/Nyasa Annual Report 2024-25.pdf',
+    date: '2024-25',
   },
 ]
 
@@ -293,8 +303,8 @@ function createReportCards() {
         <span>${report.pages} Pages</span>
       </div>
       <a href="${report.download}" target="_blank" class="report-download">
-        <span>Download PDF</span>
-        <i class="fas fa-download"></i>
+        <span>View PDF</span>
+        <i class="fas fa-eye"></i>
       </a>
     `
 

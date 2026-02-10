@@ -588,7 +588,7 @@
 }
 
 .report-download:hover {
-  background-color: var(--primary-dark);
+  background-color: black;
   transform: translateY(-2px);
 }
 
