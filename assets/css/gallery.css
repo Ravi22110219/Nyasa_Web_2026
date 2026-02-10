@@ -2,7 +2,12 @@
 /* Gallery Hero */
 .gallery-hero {
   padding: 120px 0 60px;
-  background: linear-gradient(135deg, var(--primary-color), #1a365d);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 50%,
+    #1a365d 100%
+  );
   color: var(--text-white);
   text-align: center;
   margin-top: 70px;
