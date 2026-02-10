@@ -1,0 +1,76 @@
+<!-- report.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports - Nyasa</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/blog.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <link rel="icon" type="image/x-icon" href="./assets/images/Logo/Nyasa_logo.png">
+</head>
+
+<body>
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- Reports Hero -->
+    <section class="reports-hero">
+      <div class="container">
+        <h1>Impact Reports</h1>
+        <p>Transparent documentation of our work and outcomes</p>
+      </div>
+    </section>
+
+    <!-- Reports Grid -->
+    <section class="reports-listing">
+      <div class="container">
+        <div class="section-title">
+          <h2>All Reports</h2>
+          <p>Browse through our detailed impact assessments and project reports</p>
+        </div>
+
+        <div class="reports-filter">
+          <div class="filter-group">
+            <label for="yearFilter">Filter by Year:</label>
+            <select id="yearFilter">
+              <option value="all">All Years</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+              <option value="all">All Categories</option>
+              <option value="annual">Annual Reports</option>
+              <option value="education">Education</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="environment">Environment</option>
+              <option value="financial">Financial</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="reports-container" id="reportsContainer">
+          <!-- Reports will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/report.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!-- news.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News - Nyasa</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/blog.css">
+
+  <link rel="stylesheet" href="assets/css/news.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <link rel="icon" type="image/x-icon" href="./assets/images/Logo/Nyasa_logo.png">
+</head>
+
+<body>
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- News Hero -->
+    <section class="news-hero">
+      <div class="container">
+        <h1>Articles & News</h1>
+        <p>Latest updates, stories, and insights from our journey</p>
+      </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-listing">
+      <div class="container">
+        <div class="section-title">
+          <h2>All Articles</h2>
+          <p>Explore our collection of stories, insights, and updates</p>
+        </div>
+
+        <div class="news-filter">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="stories">Stories</button>
+            <button class="filter-btn" data-category="insights">Insights</button>
+            <button class="filter-btn" data-category="updates">Updates</button>
+            <button class="filter-btn" data-category="events">Events</button>
+          </div>
+        </div>
+
+        <div class="news-container" id="newsContainer">
+          <!-- Articles will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/news.js"></script>
+</body>
+
+</html>

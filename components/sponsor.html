@@ -1,0 +1,35 @@
+<!-- components/sponsor.html -->
+<div class="sponsors-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Valued Partners</h2>
+      <p>Together we create lasting impact</p>
+    </div>
+
+    <div class="sponsors-grid" id="sponsorsGrid">
+      <!-- Sponsors will be loaded dynamically -->
+    </div>
+
+    <div class="become-sponsor">
+      <p>Interested in partnering with us?</p>
+      <a href="contribute.html#sponsor-info" class="btn btn-outline">Become a Sponsor</a>
+    </div>
+  </div>
+</div>
+
+<!-- Sponsor Modal -->
+<div class="sponsor-modal" id="sponsorModal">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <div class="modal-body">
+      <img id="modalLogo" src="" alt="" class="modal-logo">
+      <h3 id="modalName"></h3>
+      <p id="modalCategory" class="modal-category"></p>
+      <p id="modalDescription" class="modal-description"></p>
+      <div class="modal-actions">
+        <a id="modalWebsite" href="#" target="_blank" class="btn">Visit Website</a>
+        <button class="btn btn-outline" id="modalCloseBtn">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

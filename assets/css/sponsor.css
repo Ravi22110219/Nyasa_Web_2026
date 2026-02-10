@@ -1,0 +1,222 @@
+/* assets/css/sponsor.css */
+/* Sponsors Section */
+.sponsors-section {
+  padding: var(--space-xxl) 0;
+  background-color: var(--background-color);
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-xl);
+  margin: var(--space-xl) 0;
+}
+
+.sponsor-item {
+  background-color: var(--text-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-medium);
+  cursor: pointer;
+  height: 180px;
+}
+
+.sponsor-item:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.sponsor-logo {
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: var(--space-md);
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all var(--transition-medium);
+}
+
+.sponsor-item:hover .sponsor-logo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.sponsor-name {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  font-size: 1.1rem;
+}
+
+.sponsor-category {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--background-color);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+.become-sponsor {
+  text-align: center;
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--gray-light);
+  margin-top: var(--space-xl);
+}
+
+.become-sponsor p {
+  color: var(--text-light);
+  margin-bottom: var(--space-md);
+  font-size: 1.1rem;
+}
+
+/* Sponsor Modal */
+.sponsor-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  opacity: 0;
+  transition: opacity var(--transition-medium);
+}
+
+.sponsor-modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: var(--text-white);
+  border-radius: var(--radius-xl);
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-light);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+  z-index: 1;
+}
+
+.modal-close:hover {
+  color: var(--primary-color);
+}
+
+.modal-body {
+  padding: var(--space-xxl) var(--space-xl);
+  text-align: center;
+}
+
+.modal-logo {
+  max-width: 200px;
+  max-height: 100px;
+  object-fit: contain;
+  margin: 0 auto var(--space-lg);
+  display: block;
+}
+
+.modal-body h3 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: var(--space-xs);
+}
+
+.modal-category {
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: var(--space-lg);
+  font-size: 1.1rem;
+}
+
+.modal-description {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: var(--space-xl);
+  font-size: 1.05rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+}
+
+.modal-actions .btn {
+  min-width: 140px;
+}
+
+/* Responsive Sponsor */
+@media (max-width: 768px) {
+  .sponsors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+  }
+
+  .sponsor-item {
+    height: 160px;
+    padding: var(--space-md);
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .sponsors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .modal-body {
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .modal-logo {
+    max-width: 150px;
+  }
+}

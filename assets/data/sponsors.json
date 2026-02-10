@@ -1,0 +1,40 @@
+{
+  "sponsors": [
+    {
+      "name": "TechCorp Solutions",
+      "logo": "https://via.placeholder.com/150x80/0B1F3A/FFFFFF?text=TechCorp",
+      "website": "https://techcorp.example.com",
+      "category": "Technology"
+    },
+    {
+      "name": "GreenEarth Foundation",
+      "logo": "https://via.placeholder.com/150x80/3A86FF/FFFFFF?text=GreenEarth",
+      "website": "https://greenearth.example.com",
+      "category": "Environment"
+    },
+    {
+      "name": "EduGrowth Partners",
+      "logo": "https://via.placeholder.com/150x80/FF6B35/FFFFFF?text=EduGrowth",
+      "website": "https://edugrowth.example.com",
+      "category": "Education"
+    },
+    {
+      "name": "HealthFirst Corporation",
+      "logo": "https://via.placeholder.com/150x80/4CAF50/FFFFFF?text=HealthFirst",
+      "website": "https://healthfirst.example.com",
+      "category": "Healthcare"
+    },
+    {
+      "name": "Community Builders Inc",
+      "logo": "https://via.placeholder.com/150x80/9C27B0/FFFFFF?text=Community+Builders",
+      "website": "https://communitybuilders.example.com",
+      "category": "Community"
+    },
+    {
+      "name": "Future Leaders Fund",
+      "logo": "https://via.placeholder.com/150x80/FF9800/FFFFFF?text=Future+Leaders",
+      "website": "https://futureleaders.example.com",
+      "category": "Education"
+    }
+  ]
+}

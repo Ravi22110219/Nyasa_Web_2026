@@ -1,0 +1,222 @@
+/* Additional styles for report.html and news.html */
+/* Reports Hero */
+.reports-hero,
+.news-hero {
+  padding: 120px 0 60px;
+  background: linear-gradient(135deg, var(--primary-color), #1a365d);
+  color: var(--text-white);
+  text-align: center;
+  margin-top: 70px;
+}
+
+.reports-hero h1,
+.news-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: var(--space-sm);
+  color: var(--text-white);
+}
+
+.reports-hero p,
+.news-hero p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Reports Listing */
+.reports-listing,
+.news-listing {
+  padding: var(--space-xxl) 0;
+  background-color: var(--background-color);
+}
+
+.reports-filter,
+.news-filter {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.filter-group label {
+  color: var(--primary-color);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.filter-group select {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--gray-light);
+  border-radius: var(--radius-md);
+  background-color: var(--text-white);
+  color: var(--text-dark);
+  font-family: inherit;
+  font-size: 1rem;
+  min-width: 150px;
+}
+
+.reports-container,
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: var(--space-lg);
+}
+
+/* Report Card Enhancements */
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-sm);
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.report-tags {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.report-tag {
+  padding: 0.25rem 0.75rem;
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.report-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--gray-light);
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.meta-left,
+.meta-right {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.report-downloads {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Article Card Enhancements */
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--gray-light);
+}
+
+.article-author {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* No Results */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--space-xl);
+  background-color: var(--text-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.no-results h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--space-sm);
+}
+
+.no-results p {
+  color: var(--text-light);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .reports-hero h1,
+  .news-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .reports-filter,
+  .news-filter {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .filter-group {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .reports-container,
+  .news-container {
+    grid-template-columns: 1fr;
+  }
+
+  .report-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .meta-left,
+  .meta-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  .reports-hero,
+  .news-hero {
+    padding: 100px 0 40px;
+  }
+
+  .reports-hero h1,
+  .news-hero h1 {
+    font-size: 2rem;
+  }
+
+  .report-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .article-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .btn-sm {
+    width: 100%;
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Rajesh Kumar",
+      "role": "Village Head, Maharashtra",
+      "text": "Nyasa's educational programs have transformed our village. Children who never went to school are now learning and dreaming big.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Priya Sharma",
+      "role": "Beneficiary, Rajasthan",
+      "text": "The medical camps organized by Nyasa saved my daughter's life. We are forever grateful for their support and dedication.",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Dr. Anil Patel",
+      "role": "Volunteer Doctor",
+      "text": "Working with Nyasa has been an incredible experience. Their commitment to sustainable development is truly inspiring.",
+      "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "Sanjay Gupta",
+      "role": "Corporate Partner",
+      "text": "Nyasa's approach to community development is holistic and effective. They don't just provide aid, they build capacity.",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Meena Devi",
+      "role": "Women's Group Leader, Bihar",
+      "text": "The skill development program gave us not just skills but also confidence. Now we run our own small business.",
+      "image": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "name": "Arun Singh",
+      "role": "Teacher, Uttar Pradesh",
+      "text": "The digital literacy program has revolutionized how we teach. Students are more engaged and learning faster.",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+      "rating": 5
+    }
+  ]
+}

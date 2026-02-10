@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyasa | Contribute</title>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/contribute.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="./assets/images/Logo/Nyasa_logo.png">
+
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("em7z6sDqcxCGKB88W"); // Replace with your EmailJS public key
+    })();
+  </script>
+
+  <style>
+    .activePage {
+      color: black;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div id="navbar-container"></div>
+
+  <!-- Hero Section -->
+  <section class="contribute-hero" data-aos="fade-up">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Make a Change!</h1>
+          <p class="hero-subtitle">
+            We welcome donations from well-wishers worldwide. Donations made in the US and India are 100% tax
+            deductible.
+          </p>
+          <p class="hero-description">
+            Any kind of suggestions, ideas, comments are most welcome. Your thoughts will help us improve and give the
+            best back to society.
+          </p>
+          <div class="hero-actions">
+            <a href="#donate" class="cta-button primary">
+              <i class="fas fa-hand-holding-heart"></i>
+              Donate Now
+            </a>
+            <a href="#volunteer" class="cta-button secondary">
+              <i class="fas fa-hands-helping"></i>
+              Become a Volunteer
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://ststephens.net.in/uploads/images/alumni-contribution-logo.jpg" alt="Nyasa Contribution"
+            loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated Background Elements -->
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+
+  <!-- Donation Section -->
+  <section id="donate" class="donation-section">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Support Our Work</h2>
+        <p class="section-subtitle">Your donation helps us continue our community initiatives</p>
+      </div>
+
+      <div class="donation-content">
+        <!-- Donation Info -->
+        <div class="donation-info" data-aos="fade-right">
+          <h3>How Your Donation Helps</h3>
+          <div class="impact-list">
+            <div class="impact-item">
+              <div class="impact-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="impact-text">
+                <h4>Education Programs</h4>
+                <p>Supports Akanksha and Chetana programs for underprivileged children</p>
+              </div>
+            </div>
+
+            <div class="impact-item">
+              <div class="impact-icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <div class="impact-text">
+                <h4>Medical Camps</h4>
+                <p>Funds Sanjeevani health camps providing free medical checkups</p>
+              </div>
+            </div>
+
+            <div class="impact-item">
+              <div class="impact-icon">
+                <i class="fas fa-campground"></i>
+              </div>
+              <div class="impact-text">
+                <h4>Seasonal Camps</h4>
+                <p>Organizes Summer and Winter camps for children's development</p>
+              </div>
+            </div>
+
+            <div class="impact-item">
+              <div class="impact-icon">
+                <i class="fas fa-tshirt"></i>
+              </div>
+              <div class="impact-text">
+                <h4>Distribution Drives</h4>
+                <p>Provides essential items to families in need</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Donation CTA -->
+        <div class="donation-cta" data-aos="fade-left">
+          <div class="cta-card">
+            <h3>Make a Donation</h3>
+            <p>Your contribution creates lasting impact in the community</p>
+            <!-- 
+            <div class="donation-options">
+              <div class="amount-grid">
+                <button class="amount-btn" data-amount="500">₹500</button>
+                <button class="amount-btn" data-amount="1000">₹1,000</button>
+                <button class="amount-btn" data-amount="2500">₹2,500</button>
+                <button class="amount-btn active" data-amount="5000">₹5,000</button>
+                <button class="amount-btn" data-amount="10000">₹10,000</button>
+              </div>
+
+              <div class="custom-amount">
+                <label for="customAmount">Custom Amount (₹)</label>
+                <input type="number" id="customAmount" min="100" step="100" placeholder="Enter amount">
+              </div>
+
+              <div class="donation-frequency">
+                <label>Donation Frequency</label>
+                <div class="frequency-options">
+                  <button class="frequency-btn active" data-frequency="one-time">One Time</button>
+                  <button class="frequency-btn" data-frequency="monthly">Monthly</button>
+                  <button class="frequency-btn" data-frequency="quarterly">Quarterly</button>
+                </div>
+              </div>
+            </div> -->
+
+            <a href="https://donate.iitgn.ac.in/nyasa" class="donate-button">
+              <i class="fas fa-hand-holding-heart"></i>
+              Proceed to Donate
+            </a>
+
+            <p class="secure-note">
+              <i class="fas fa-shield-alt"></i>
+              Secure payment processed by IITGN
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Volunteer Section -->
+  <section id="volunteer" class="volunteer-section">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Become a Volunteer</h2>
+        <p class="section-subtitle">Join our mission to make a difference in the community</p>
+      </div>
+
+      <div class="volunteer-container">
+        <!-- Volunteer Programs -->
+        <div class="programs-sidebar" data-aos="fade-right">
+          <h3>Volunteer Programs</h3>
+          <div class="program-list">
+            <div class="program-item active" data-program="chetana">
+              <div class="program-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <div class="program-info">
+                <h4>Chetana</h4>
+                <p>Digital Literacy Program</p>
+              </div>
+            </div>
+
+            <div class="program-item" data-program="akanksha">
+              <div class="program-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="program-info">
+                <h4>Akanksha</h4>
+                <p>Empower Young Minds</p>
+              </div>
+            </div>
+
+            <div class="program-item" data-program="summer-camp">
+              <div class="program-icon">
+                <i class="fas fa-sun"></i>
+              </div>
+              <div class="program-info">
+                <h4>Summer Camp</h4>
+                <p>Children's Learning Program</p>
+              </div>
+            </div>
+
+            <div class="program-item" data-program="winter-camp">
+              <div class="program-icon">
+                <i class="fas fa-snowflake"></i>
+              </div>
+              <div class="program-info">
+                <h4>Winter Camp</h4>
+                <p>Seasonal Activities</p>
+              </div>
+            </div>
+
+            <div class="program-item" data-program="sanjeevani">
+              <div class="program-icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <div class="program-info">
+                <h4>Sanjeevani</h4>
+                <p>Medical Camp Volunteering</p>
+              </div>
+            </div>
+
+            <div class="program-item" data-program="general">
+              <div class="program-icon">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <div class="program-info">
+                <h4>General Volunteer</h4>
+                <p>Various Activities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Volunteer Form -->
+        <div class="volunteer-form-container" data-aos="fade-left">
+          <h3>Volunteer Application Form</h3>
+          <form id="volunteerForm">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="age">Age *</label>
+                <input type="number" id="age" name="age" min="16" max="60" required>
+              </div>
+
+              <div class="form-group">
+                <label for="occupation">Occupation/Student</label>
+                <input type="text" id="occupation" name="occupation">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="selectedProgram">Program Interest *</label>
+              <select id="selectedProgram" name="selectedProgram" required>
+                <option value="" disabled selected>Select a program</option>
+                <option value="Chetana - Digital Literacy Program">Chetana - Digital Literacy Program</option>
+                <option value="Akanksha - Empower Young Minds">Akanksha - Empower Young Minds</option>
+                <option value="Summer Camp - Children's Learning Program">Summer Camp - Children's Learning Program
+                </option>
+                <option value="Winter Camp - Seasonal Activities">Winter Camp - Seasonal Activities</option>
+                <option value="Sanjeevani - Medical Camp">Sanjeevani - Medical Camp</option>
+                <option value="General Volunteer - Various Activities">General Volunteer - Various Activities</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="availability">Availability *</label>
+              <select id="availability" name="availability" required>
+                <option value="" disabled selected>Select availability</option>
+                <option value="Weekends">Weekends</option>
+                <option value="Weekdays">Weekdays</option>
+                <option value="Both Weekends & Weekdays">Both Weekends & Weekdays</option>
+                <option value="Flexible">Flexible</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="skills">Skills & Experience</label>
+              <textarea id="skills" name="skills" rows="3"
+                placeholder="Tell us about your skills, experience, or why you want to volunteer..."></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="consent" required>
+                <span>I agree to receive communication from Nyasa regarding volunteer opportunities</span>
+              </label>
+            </div>
+
+            <button type="submit" class="submit-button">
+              <i class="fas fa-paper-plane"></i>
+              Submit Application
+            </button>
+
+            <div id="formMessage" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Info -->
+  <section class="contact-section" data-aos="fade-up">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Get in touch with our team</p>
+      </div>
+
+      <div class="contact-cards">
+        <!-- Faculty Advisor -->
+        <div class="contact-card" data-aos="zoom-in">
+          <div class="contact-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>Faculty Advisor</h3>
+          <h4>Prof. Krista R. Khiangte</h4>
+          <a href="mailto:krista.khiangte@iitgn.ac.in" class="contact-email">
+            <i class="fas fa-envelope"></i>
+            krista.khiangte@iitgn.ac.in
+          </a>
+        </div>
+
+        <!-- Core Members -->
+        <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="contact-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Core Members</h3>
+          <div class="contact-details">
+            <div class="contact-person">
+              <h4>Prabhat Kumar</h4>
+              <a href="mailto:prabhatk@iitgn.ac.in">
+                <i class="fas fa-envelope"></i>
+                prabhatk@iitgn.ac.in
+              </a>
+            </div>
+            <div class="contact-person">
+              <h4>Pravalli Matta</h4>
+              <a href="mailto:pravalli.matta@iitgn.ac.in">
+                <i class="fas fa-envelope"></i>
+                pravalli.matta@iitgn.ac.in
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- General Contact -->
+        <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="contact-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>General Contact</h3>
+          <a href="mailto:nyasa@iitgn.ac.in" class="contact-email main">
+            <i class="fas fa-envelope"></i>
+            nyasa@iitgn.ac.in
+          </a>
+          <div class="contact-social">
+            <a href="https://www.instagram.com/nyasa_iitgn/" target="_blank" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/NYASA-IIT-Gandhinagar-241515162640418/?fref=nf" target="_blank"
+              class="social-link">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/nyasa-iit-gandhinagar/" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+
+  <div id="footer-container"></div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/blog.js"></script>
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+
+    // Volunteer form program selection
+    document.addEventListener('DOMContentLoaded', function () {
+      const programItems = document.querySelectorAll('.program-item');
+      const programSelect = document.getElementById('selectedProgram');
+
+      programItems.forEach(item => {
+        item.addEventListener('click', function () {
+          // Remove active class from all items
+          programItems.forEach(i => i.classList.remove('active'));
+          // Add active class to clicked item
+          this.classList.add('active');
+
+          // Update form selection
+          const programName = this.querySelector('h4').textContent;
+          const programDesc = this.querySelector('p').textContent;
+          const programValue = `${programName} - ${programDesc}`;
+
+          // Find and select the option
+          Array.from(programSelect.options).forEach(option => {
+            if (option.text === programValue) {
+              option.selected = true;
+            }
+          });
+        });
+      });
+
+      // Donation amount selection
+      const amountButtons = document.querySelectorAll('.amount-btn');
+      const customAmountInput = document.getElementById('customAmount');
+
+      amountButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          // Remove active class from all buttons
+          amountButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          this.classList.add('active');
+          // Clear custom amount
+          customAmountInput.value = '';
+        });
+      });
+
+      // Custom amount input
+      customAmountInput.addEventListener('input', function () {
+        // Remove active class from amount buttons when custom amount is entered
+        amountButtons.forEach(btn => btn.classList.remove('active'));
+      });
+
+      // Donation frequency selection
+      const frequencyButtons = document.querySelectorAll('.frequency-btn');
+      frequencyButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          frequencyButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+
+      // Volunteer form submission with EmailJS
+      const volunteerForm = document.getElementById("volunteerForm");
+      const formMessage = document.getElementById("formMessage");
+
+      volunteerForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(volunteerForm);
+        const data = Object.fromEntries(formData.entries());
+
+        if (!data.consent) {
+          showMessage("Please accept consent checkbox", "error");
+          return;
+        }
+
+        const templateParams = {
+          fullName: data.fullName,
+          email: data.email,
+          phone: data.phone,
+          age: data.age,
+          occupation: data.occupation || "Not specified",
+          selectedProgram: data.selectedProgram,
+          availability: data.availability,
+          skills: data.skills || "Not specified",
+          timestamp: new Date().toLocaleString()
+        };
+
+        const submitBtn = volunteerForm.querySelector(".submit-button");
+        const originalText = submitBtn.innerHTML;
+
+        submitBtn.innerHTML = "Sending...";
+        submitBtn.disabled = true;
+
+        emailjs
+          .send(
+            "service_gcqtbld",     // SERVICE ID
+            "template_9wafz8l",    // TEMPLATE ID
+            templateParams
+          )
+          .then(() => {
+            showMessage("Application submitted successfully!", "success");
+            volunteerForm.reset();
+          })
+          .catch((error) => {
+            console.error(error);
+            showMessage("Failed to send application. Try again.", "error");
+          })
+          .finally(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+          });
+      });
+
+
+      function showMessage(msg, type) {
+        formMessage.textContent = msg;
+        formMessage.className = "form-message " + type;
+        formMessage.style.display = "block";
+
+        setTimeout(() => {
+          formMessage.style.display = "none";
+        }, 5000);
+      }
+
+
+      // Donation button click
+      const donateButton = document.querySelector('.donate-button');
+      donateButton.addEventListener('click', function (e) {
+        const selectedAmountBtn = document.querySelector('.amount-btn.active');
+        const customAmount = customAmountInput.value;
+        const selectedFrequency = document.querySelector('.frequency-btn.active');
+
+        let amount = 5000; // Default amount
+
+        if (selectedAmountBtn) {
+          amount = selectedAmountBtn.getAttribute('data-amount');
+        } else if (customAmount && customAmount >= 100) {
+          amount = customAmount;
+        }
+
+        const frequency = selectedFrequency ? selectedFrequency.getAttribute('data-frequency') : 'one-time';
+
+        // You can add analytics or tracking here
+        console.log(`Donation: ₹${amount} (${frequency})`);
+
+        // The actual donation will be handled by the IITGN donation portal
+      });
+
+
+    });
+  </script>
+</body>
+
+</html>

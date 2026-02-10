@@ -1,0 +1,84 @@
+<!-- gallery.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Nyasa</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <link rel="icon" type="image/x-icon" href="./assets/images/Logo/Nyasa_logo.png">
+</head>
+
+<body>
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+      <div class="container">
+        <h1>Gallery</h1>
+        <p>Capturing moments of impact and transformation</p>
+      </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="education">Education</button>
+          <button class="filter-btn" data-filter="healthcare">Health-Camp</button>
+          <button class="filter-btn" data-filter="community">Summer & Winter- Camp</button>
+          <button class="filter-btn" data-filter="distribution">Distribution</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid-section">
+      <div class="container">
+        <div class="gallery-grid">
+          <!-- Images will be loaded by JavaScript -->
+        </div>
+
+        <div class="load-more-container">
+          <button id="load-more" class="btn btn-outline">Load More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <button id="close-lightbox" class="lightbox-close">&times;</button>
+        <button id="prev-btn" class="lightbox-btn prev-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <img id="lightbox-image" src="" alt="">
+        <button id="next-btn" class="lightbox-btn next-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </button>
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!-- Hero Slider Section -->
+<section class="hero-slider" aria-label="Hero Slider">
+  <div class="slider-container">
+    <div class="slider-track">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="slide-content animate-slide-in-left">
+          <h1>Empowering Communities, Transforming Lives</h1>
+          <p>Nyasa is dedicated to creating sustainable change through education, healthcare, and community development
+            initiatives.</p>
+          <a href="about.html" class="btn btn-primary animate-fade-in" style="animation-delay: 0.6s;">Learn More</a>
+        </div>
+        <div class="slide-image animate-zoom-in"
+          style="animation-delay: 0.3s; background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h1>Education for All Children</h1>
+          <p>Providing quality education to underprivileged children across rural communities.</p>
+          <a href="activities.html" class="btn btn-accent">Our Activities</a>
+        </div>
+        <div class="slide-image"
+          style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h1>Healthcare Initiatives</h1>
+          <p>Bringing medical care and health awareness to remote areas.</p>
+          <a href="contribute.html" class="btn btn-primary">Get Involved</a>
+        </div>
+        <div class="slide-image"
+          style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h1>Building Hope & Futures</h1>
+          <p>Creating opportunities and transforming lives through sustainable community programs.</p>
+          <a href="activities.html" class="btn btn-accent">Our Impact</a>
+        </div>
+        <div class="slide-image"
+          style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <button class="slider-btn prev-btn animate-fade-in" aria-label="Previous slide" style="animation-delay: 0.8s;">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="slider-btn next-btn animate-fade-in" aria-label="Next slide" style="animation-delay: 0.8s;">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <!-- Slider Dots -->
+    <div class="slider-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+
+<!-- Hero Slider JavaScript -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    let currentSlide = 0;
+    let slideInterval;
+
+    // Initialize animations on first slide
+    initializeSlideAnimations();
+
+    function showSlide(n) {
+      // Remove active class from all slides and dots
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+
+      // Calculate new slide index
+      currentSlide = (n + slides.length) % slides.length;
+
+      // Add active class to current slide and dot
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+
+      // Trigger animations for active slide
+      initializeSlideAnimations();
+    }
+
+    function initializeSlideAnimations() {
+      const activeSlide = slides[currentSlide];
+      const content = activeSlide.querySelector('.slide-content');
+      const image = activeSlide.querySelector('.slide-image');
+
+      // Reset animations
+      content.classList.remove('animate-slide-in-left');
+      image.classList.remove('animate-zoom-in');
+
+      // Trigger reflow
+      void content.offsetWidth;
+      void image.offsetWidth;
+
+      // Add animations
+      setTimeout(() => {
+        content.classList.add('animate-slide-in-left');
+        image.classList.add('animate-zoom-in');
+      }, 50);
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    function currentSlideDot(n) {
+      showSlide(n);
+      resetInterval();
+    }
+
+    function startInterval() {
+      slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetInterval() {
+      clearInterval(slideInterval);
+      startInterval();
+    }
+
+    // Event Listeners
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetInterval();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetInterval();
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => currentSlideDot(index));
+    });
+
+    // Pause on hover
+    const slider = document.querySelector('.hero-slider');
+    slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+    slider.addEventListener('mouseleave', startInterval);
+
+    // Start auto-slide
+    startInterval();
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        prevSlide();
+        resetInterval();
+      } else if (e.key === 'ArrowRight') {
+        nextSlide();
+        resetInterval();
+      }
+    });
+  });
+</script>
