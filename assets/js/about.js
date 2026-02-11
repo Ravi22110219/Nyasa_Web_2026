@@ -39,7 +39,7 @@ class AboutPage {
       },
       {
         name: 'Ganivada Lalith',
-        image: 'assets/images/team/Ganivada Lalith.jpg',
+        image: 'assets/images/team/Ganivada Lalith.jpeg',
       },
       { name: 'Kovid Parmar', image: 'assets/images/team/Kovid Parmar.jpg' },
       {
@@ -74,7 +74,7 @@ class AboutPage {
         image: 'assets/images/team/Modalavalasa Anusha.jpg',
       },
       { name: 'Niteesha Rao P', image: 'assets/images/team/Niteesha Rao.jpeg' },
-      { name: 'Parth Raut', image: 'assets/images/team/Parth Raut.jpg' },
+      { name: 'Parth Raut', image: 'assets/images/team/Parth Raut.jpeg' },
       { name: 'Rahul Ahirwar', image: 'assets/images/team/Rahul Ahirwar.jpg' },
       { name: 'Rashid Pathan', image: 'assets/images/team/Rashid Pathan.jpg' },
       { name: 'Sachin Kumar', image: 'assets/images/team/Sachin Kumar.jpg' },

@@ -1,154 +1,113 @@
-// assets/js/testimonial.js
-class TestimonialSlider {
+class YouTubeCarousel {
   constructor() {
-    this.slider = document.querySelector('.testimonial-slider')
-    if (!this.slider) return
+    this.cards = document.querySelectorAll('.video-card')
+    this.prev = document.getElementById('prevBtn')
+    this.next = document.getElementById('nextBtn')
+    this.dots = document.querySelectorAll('.dot')
 
-    this.track = this.slider.querySelector('.testimonial-track')
-    this.prevBtn = this.slider.querySelector('.prev-btn')
-    this.nextBtn = this.slider.querySelector('.next-btn')
-
-    this.currentIndex = 0
-    this.isAnimating = false
-    this.testimonials = []
+    this.index = 1
+    this.total = this.cards.length
+    this.players = []
 
     this.init()
   }
 
-  init() {
-    this.createTestimonials()
-    this.setupEventListeners()
-    this.updateSlider()
+  async init() {
+    await this.loadYT()
+    this.initPlayers()
+    this.update()
+    this.events()
   }
 
-  createTestimonials() {
-    this.testimonials = [
-      {
-        text: "Nyasa's educational programs have transformed our village. Children who never went to school are now learning and dreaming big.",
-        name: 'Rajesh Kumar',
-        role: 'Village Head, Maharashtra',
-        image:
-          'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80',
-      },
-      {
-        text: "The medical camps organized by Nyasa saved my daughter's life. We are forever grateful for their support and dedication.",
-        name: 'Priya Sharma',
-        role: 'Beneficiary, Rajasthan',
-        image:
-          'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80',
-      },
-      {
-        text: 'Working with Nyasa has been an incredible experience. Their commitment to sustainable development is truly inspiring.',
-        name: 'Dr. Anil Patel',
-        role: 'Volunteer Doctor',
-        image:
-          'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80',
-      },
-      {
-        text: "Nyasa's approach to community development is holistic and effective. They don't just provide aid, they build capacity.",
-        name: 'Sanjay Gupta',
-        role: 'Corporate Partner',
-        image:
-          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80',
-      },
-    ]
-
-    this.track.innerHTML = this.testimonials
-      .map(
-        (testimonial) => `
-            <div class="testimonial-card">
-                <div class="testimonial-text">
-                    ${testimonial.text}
-                </div>
-                <div class="testimonial-author">
-                    <img src="${testimonial.image}" alt="${testimonial.name}" class="author-image">
-                    <div class="author-info">
-                        <h4>${testimonial.name}</h4>
-                        <p>${testimonial.role}</p>
-                    </div>
-                </div>
-            </div>
-        `,
-      )
-      .join('')
-
-    this.testimonialCards = Array.from(
-      this.track.querySelectorAll('.testimonial-card'),
-    )
+  loadYT() {
+    return new Promise((res) => {
+      if (window.YT) return res()
+      let tag = document.createElement('script')
+      tag.src = 'https://www.youtube.com/iframe_api'
+      document.body.appendChild(tag)
+      window.onYouTubeIframeAPIReady = res
+    })
   }
 
-  setupEventListeners() {
-    if (this.prevBtn) {
-      this.prevBtn.addEventListener('click', () => this.prevTestimonial())
-    }
+  initPlayers() {
+    this.cards.forEach((card, i) => {
+      let iframe = card.querySelector('iframe')
+      let player = new YT.Player(iframe, {
+        events: {
+          onReady: (e) => {
+            this.players[i] = e.target
+            if (i !== this.index) e.target.pauseVideo()
+          },
+          onStateChange: (e) => {
+            if (i !== this.index && e.data === 1) {
+              e.target.pauseVideo()
+            }
+          },
+        },
+      })
+    })
+  }
 
-    if (this.nextBtn) {
-      this.nextBtn.addEventListener('click', () => this.nextTestimonial())
-    }
+  update() {
+    this.cards.forEach((card, i) => {
+      let pos = i - this.index
+      if (pos < -2) pos += this.total
+      if (pos > 2) pos -= this.total
 
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowLeft') {
-        this.prevTestimonial()
-      } else if (e.key === 'ArrowRight') {
-        this.nextTestimonial()
+      card.removeAttribute('data-position')
+
+      if (pos === 0) {
+        card.setAttribute('data-position', 'center')
+      } else if (pos === -1) {
+        card.setAttribute('data-position', 'left')
+      } else if (pos === 1) {
+        card.setAttribute('data-position', 'right')
+      } else if (pos < -1) {
+        card.setAttribute('data-position', 'hidden-left')
+      } else {
+        card.setAttribute('data-position', 'hidden-right')
       }
     })
 
-    // Touch support
-    let touchStartX = 0
-    let touchEndX = 0
+    this.updateDots()
+    this.pauseOthers()
+  }
 
-    this.slider.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX
-    })
-
-    this.slider.addEventListener('touchend', (e) => {
-      touchEndX = e.changedTouches[0].screenX
-      this.handleSwipe(touchStartX, touchEndX)
+  pauseOthers() {
+    this.players.forEach((p, i) => {
+      if (p && i !== this.index) p.pauseVideo()
     })
   }
 
-  handleSwipe(startX, endX) {
-    const swipeThreshold = 50
-
-    if (startX - endX > swipeThreshold) {
-      this.nextTestimonial()
-    } else if (endX - startX > swipeThreshold) {
-      this.prevTestimonial()
-    }
+  updateDots() {
+    this.dots.forEach((d, i) => {
+      d.classList.toggle('active', i === this.index)
+    })
   }
 
-  prevTestimonial() {
-    if (this.isAnimating) return
-
-    this.currentIndex =
-      (this.currentIndex - 1 + this.testimonials.length) %
-      this.testimonials.length
-    this.updateSlider()
+  nextSlide() {
+    this.index = (this.index + 1) % this.total
+    this.update()
   }
 
-  nextTestimonial() {
-    if (this.isAnimating) return
-
-    this.currentIndex = (this.currentIndex + 1) % this.testimonials.length
-    this.updateSlider()
+  prevSlide() {
+    this.index = (this.index - 1 + this.total) % this.total
+    this.update()
   }
 
-  updateSlider() {
-    this.isAnimating = true
+  events() {
+    this.next.onclick = () => this.nextSlide()
+    this.prev.onclick = () => this.prevSlide()
 
-    const offset = -this.currentIndex * 100
-    this.track.style.transform = `translateX(${offset}%)`
-
-    // Reset animation flag
-    setTimeout(() => {
-      this.isAnimating = false
-    }, 500)
+    this.dots.forEach((d, i) => {
+      d.onclick = () => {
+        this.index = i
+        this.update()
+      }
+    })
   }
 }
 
-// Initialize testimonial slider
 document.addEventListener('DOMContentLoaded', () => {
-  new TestimonialSlider()
+  new YouTubeCarousel()
 })

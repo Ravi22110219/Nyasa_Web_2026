@@ -1,0 +1,118 @@
+.youtube-carousel-section {
+  width: 100%;
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.carousel-container {
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-perspective {
+  perspective: 1400px;
+}
+
+.carousel-track-wrapper {
+  overflow: visible;
+  padding: 40px 0;
+}
+
+.carousel-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+
+/* CARD */
+.video-card {
+  flex: 0 0 360px;
+  height: 240px;
+  margin: 0 -30px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* POSITIONS */
+.video-card[data-position='left'] {
+  transform: translateX(140px) rotateY(35deg) scale(0.8) translateZ(-80px);
+  opacity: 0.85;
+}
+
+.video-card[data-position='center'] {
+  transform: translateX(0) rotateY(0) scale(1) translateZ(0);
+  opacity: 1;
+}
+
+.video-card[data-position='right'] {
+  transform: translateX(-140px) rotateY(-35deg) scale(0.8) translateZ(-80px);
+  opacity: 0.85;
+}
+
+.video-card[data-position='hidden-left'] {
+  transform: translateX(260px) rotateY(55deg) scale(0.6) translateZ(-200px);
+  opacity: 0;
+}
+
+.video-card[data-position='hidden-right'] {
+  transform: translateX(-260px) rotateY(-55deg) scale(0.6) translateZ(-200px);
+  opacity: 0;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none;
+}
+
+.video-card[data-position='center'] iframe {
+  pointer-events: auto;
+}
+
+/* NAV */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.prev-btn {
+  left: 0;
+}
+.next-btn {
+  right: 0;
+}
+
+/* DOTS */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #cbd5e1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #2563eb;
+  transform: scale(1.3);
+}
