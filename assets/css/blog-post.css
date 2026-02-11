@@ -63,7 +63,7 @@
 .article-title {
   font-size: 3rem;
   color: var(--primary-color);
-  margin-bottom: var(--space-xl);
+  text-align: justify;
   line-height: 1.2;
 }
 
@@ -104,7 +104,6 @@
 /* Featured Image */
 .featured-image-container {
   position: relative;
-  margin-bottom: var(--space-xxl);
 }
 
 .featured-image {
@@ -150,12 +149,12 @@
 }
 
 .main-content {
-  padding-right: var(--space-xl);
+  padding-right: var(--space-lg);
 }
 
 /* Post Sections */
 .post-section {
-  margin-bottom: var(--space-xxl);
+  margin-bottom: var(--space-xl);
 }
 
 .lead {

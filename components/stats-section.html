@@ -1,102 +1,50 @@
-<!-- Animated Stats Section -->
 <section class="stats-section section-padding" aria-labelledby="stats-title">
   <div class="container">
     <div class="section-header text-center">
-      <h2 class="section-title animate-fade-in-up" id="stats-title">Our Impact in Numbers</h2>
-      <p class="section-subtitle animate-fade-in-up" style="animation-delay: 0.1s;">
+      <h2 class="section-title" id="stats-title">Our Impact in Numbers</h2>
+      <p class="section-subtitle">
         Making a difference one life at a time
       </p>
     </div>
 
     <div class="grid-4">
-      <!-- Stat 1 -->
-      <div class="stat-card animate-on-scroll">
-        <div class="stat-icon animate-bounce">
-          <i class="fas fa-users"></i>
+
+      <div class="stat-card animate-on-scroll" data-animation-delay="0">
+        <div class="stat-icon"><i class="fas fa-users"></i></div>
+        <div class="stat-number">
+          <span class="counter" data-target="4000">0</span><span class="plus-sign">+</span>
         </div>
-        <div class="stat-number animate-count" data-target="4000" data-speed="100">0</div>
         <div class="stat-label">Children Impacted</div>
         <div class="stat-description">Since our inception in 2011</div>
       </div>
 
-      <!-- Stat 2 -->
-      <div class="stat-card animate-on-scroll" style="animation-delay: 0.2s;">
-        <div class="stat-icon animate-bounce" style="animation-delay: 0.2s;">
-          <i class="fas fa-medkit"></i>
+      <div class="stat-card animate-on-scroll" data-animation-delay="200">
+        <div class="stat-icon"><i class="fas fa-medkit"></i></div>
+        <div class="stat-number">
+          <span class="counter" data-target="2000">0</span><span class="plus-sign">+</span>
         </div>
-        <div class="stat-number animate-count" data-target="2000" data-speed="150">0</div>
         <div class="stat-label">Medical Checkups</div>
         <div class="stat-description">Through Sanjeevani Camps</div>
       </div>
 
-      <!-- Stat 3 -->
-      <div class="stat-card animate-on-scroll" style="animation-delay: 0.4s;">
-        <div class="stat-icon animate-bounce" style="animation-delay: 0.4s;">
-          <i class="fas fa-campground"></i>
+      <div class="stat-card animate-on-scroll" data-animation-delay="400">
+        <div class="stat-icon"><i class="fas fa-campground"></i></div>
+        <div class="stat-number">
+          <span class="counter" data-target="800">0</span><span class="plus-sign">+</span>
         </div>
-        <div class="stat-number animate-count" data-target="800" data-speed="200">0</div>
         <div class="stat-label">Summer Camp Attendees</div>
         <div class="stat-description">Educational & recreational activities</div>
       </div>
 
-      <!-- Stat 4 -->
-      <div class="stat-card animate-on-scroll" style="animation-delay: 0.6s;">
-        <div class="stat-icon animate-bounce" style="animation-delay: 0.6s;">
-          <i class="fas fa-hand-holding-heart"></i>
+      <div class="stat-card animate-on-scroll" data-animation-delay="600">
+        <div class="stat-icon"><i class="fas fa-hand-holding-heart"></i></div>
+        <div class="stat-number">
+          <span class="counter" data-target="500">0</span><span class="plus-sign">+</span>
         </div>
-        <div class="stat-number animate-count" data-target="500" data-speed="250">0</div>
         <div class="stat-label">Volunteers Engaged</div>
         <div class="stat-description">Students & community members</div>
       </div>
+
     </div>
   </div>
 </section>
-
-<!-- Stats Animation JavaScript -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const statCards = document.querySelectorAll('.animate-on-scroll');
-
-    // Counter animation function
-    function animateCounter(element) {
-      const target = parseInt(element.getAttribute('data-target'));
-      const speed = parseInt(element.getAttribute('data-speed')) || 100;
-      const increment = target / speed;
-      let current = 0;
-
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          element.textContent = target.toLocaleString();
-          clearInterval(timer);
-        } else {
-          element.textContent = Math.floor(current).toLocaleString();
-        }
-      }, 20);
-    }
-
-    // Intersection Observer for scroll animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-in-up');
-
-          // Trigger counter animation
-          const counter = entry.target.querySelector('.animate-count');
-          if (counter && !counter.hasAttribute('data-counted')) {
-            counter.setAttribute('data-counted', 'true');
-            animateCounter(counter);
-          }
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    });
-
-    // Observe all stat cards
-    statCards.forEach(card => {
-      observer.observe(card);
-    });
-  });
-</script>

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="assets/css/contribute.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="./assets/images/Logo/Nyasa_logo.png">
+  <link rel="icon" type="image/x-icon" href="./assets/images/Logo/favicon.ico">
 
 
   <!-- AOS Animation Library -->
@@ -325,11 +325,16 @@
             </div>
 
             <div class="form-group checkbox-group">
-              <label class="checkbox-label">
-                <input type="checkbox" name="consent" required>
-                <span>I agree to receive communication from Nyasa regarding volunteer opportunities</span>
+              <label class="consent-wrapper">
+                <input type="checkbox" class="consent-checkbox" name="consent" required>
               </label>
+
+              <span class="consent-text">
+                I agree to receive communication from Nyasa regarding volunteer opportunities
+              </span>
             </div>
+
+
 
             <button type="submit" class="submit-button">
               <i class="fas fa-paper-plane"></i>
