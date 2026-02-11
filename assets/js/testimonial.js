@@ -1,113 +1,51 @@
-class YouTubeCarousel {
-  constructor() {
-    this.cards = document.querySelectorAll('.video-card')
-    this.prev = document.getElementById('prevBtn')
-    this.next = document.getElementById('nextBtn')
-    this.dots = document.querySelectorAll('.dot')
+document.addEventListener('DOMContentLoaded', function () {
+  // Initialize Swiper
+  var testimonialSwiper = new Swiper('.mySwiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto', // Automatically fit based on CSS width
+    coverflowEffect: {
+      rotate: 0, // No rotation for a cleaner modern look
+      stretch: 0,
+      depth: 150, // Depth of the 3D effect
+      modifier: 2.5, // Intensity of the effect
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true, // Native Swiper feature to pause on hover
+    },
+    // Breakpoints aren't strictly needed with slidesPerView: 'auto'
+    // and fixed CSS width, but this adds safety:
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+      },
+    },
+  })
 
-    this.index = 1
-    this.total = this.cards.length
-    this.players = []
+  // Extra logic to ensure smooth interaction with iframes
+  const swiperContainer = document.querySelector('.mySwiper')
 
-    this.init()
-  }
-
-  async init() {
-    await this.loadYT()
-    this.initPlayers()
-    this.update()
-    this.events()
-  }
-
-  loadYT() {
-    return new Promise((res) => {
-      if (window.YT) return res()
-      let tag = document.createElement('script')
-      tag.src = 'https://www.youtube.com/iframe_api'
-      document.body.appendChild(tag)
-      window.onYouTubeIframeAPIReady = res
-    })
-  }
-
-  initPlayers() {
-    this.cards.forEach((card, i) => {
-      let iframe = card.querySelector('iframe')
-      let player = new YT.Player(iframe, {
-        events: {
-          onReady: (e) => {
-            this.players[i] = e.target
-            if (i !== this.index) e.target.pauseVideo()
-          },
-          onStateChange: (e) => {
-            if (i !== this.index && e.data === 1) {
-              e.target.pauseVideo()
-            }
-          },
-        },
-      })
-    })
-  }
-
-  update() {
-    this.cards.forEach((card, i) => {
-      let pos = i - this.index
-      if (pos < -2) pos += this.total
-      if (pos > 2) pos -= this.total
-
-      card.removeAttribute('data-position')
-
-      if (pos === 0) {
-        card.setAttribute('data-position', 'center')
-      } else if (pos === -1) {
-        card.setAttribute('data-position', 'left')
-      } else if (pos === 1) {
-        card.setAttribute('data-position', 'right')
-      } else if (pos < -1) {
-        card.setAttribute('data-position', 'hidden-left')
-      } else {
-        card.setAttribute('data-position', 'hidden-right')
-      }
+  if (swiperContainer) {
+    swiperContainer.addEventListener('mouseenter', () => {
+      testimonialSwiper.autoplay.stop()
     })
 
-    this.updateDots()
-    this.pauseOthers()
-  }
-
-  pauseOthers() {
-    this.players.forEach((p, i) => {
-      if (p && i !== this.index) p.pauseVideo()
+    swiperContainer.addEventListener('mouseleave', () => {
+      testimonialSwiper.autoplay.start()
     })
   }
-
-  updateDots() {
-    this.dots.forEach((d, i) => {
-      d.classList.toggle('active', i === this.index)
-    })
-  }
-
-  nextSlide() {
-    this.index = (this.index + 1) % this.total
-    this.update()
-  }
-
-  prevSlide() {
-    this.index = (this.index - 1 + this.total) % this.total
-    this.update()
-  }
-
-  events() {
-    this.next.onclick = () => this.nextSlide()
-    this.prev.onclick = () => this.prevSlide()
-
-    this.dots.forEach((d, i) => {
-      d.onclick = () => {
-        this.index = i
-        this.update()
-      }
-    })
-  }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  new YouTubeCarousel()
 })

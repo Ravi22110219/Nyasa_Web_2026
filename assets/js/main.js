@@ -378,7 +378,7 @@ class ComponentLoader {
     if (typeof initializeTestimonialsSlider === 'function') {
       initializeTestimonialsSlider()
     } else {
-      this.loadScript('assets/js/testimonials-slider.js')
+      this.loadScript('assets/js/testimonial.js')
         .then(() => {
           if (typeof initializeTestimonialsSlider === 'function') {
             initializeTestimonialsSlider()
