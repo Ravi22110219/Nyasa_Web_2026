@@ -1,4 +1,4 @@
-// assets/js/main.js - UPDATED & CORRECTED VERSION
+// assets/js/main.js - UPDATED & CORRECTED VERSION WITH FOOTER POPUP
 class ComponentLoader {
   constructor() {
     this.components = {
@@ -9,7 +9,6 @@ class ComponentLoader {
       visionMission: 'components/vision-mission.html',
       statsSection: 'components/stats-section.html',
       activitiesSection: 'components/activities-preview.html',
-
       sponsors: 'components/sponsors.html',
       ctaSection: 'components/cta-section.html',
     }
@@ -97,7 +96,6 @@ class ComponentLoader {
         'activities-section-container',
         this.components.activitiesSection,
       )
-
       await this.loadComponent('sponsors-container', this.components.sponsors)
       await this.loadComponent(
         'cta-section-container',
@@ -195,6 +193,7 @@ class ComponentLoader {
 
   initializeFooter() {
     this.initializeVisitorCounter()
+    this.initializeDeveloperPopup()
 
     const currentYear = new Date().getFullYear()
     const yearElement = document.getElementById('current-year')
@@ -234,6 +233,74 @@ class ComponentLoader {
       }
       element.textContent = Math.floor(current).toLocaleString()
     }, 20)
+  }
+
+  // NEW: Developer Popup Initialization
+  initializeDeveloperPopup() {
+    const modal = document.getElementById('developerModal')
+    const developerLink = document.getElementById('developer-popup-link')
+    const closeBtn = document.querySelector('.close-modal')
+
+    if (!modal || !developerLink) {
+      // Elements not found yet, they might be loaded dynamically
+      // Use MutationObserver to wait for them
+      this.waitForElements()
+      return
+    }
+
+    this.setupPopupEventListeners(modal, developerLink, closeBtn)
+  }
+
+  waitForElements() {
+    // Check if elements exist every 100ms for up to 3 seconds
+    let attempts = 0
+    const maxAttempts = 30
+    const checkInterval = setInterval(() => {
+      attempts++
+      const modal = document.getElementById('developerModal')
+      const developerLink = document.getElementById('developer-popup-link')
+      const closeBtn = document.querySelector('.close-modal')
+
+      if ((modal && developerLink) || attempts >= maxAttempts) {
+        clearInterval(checkInterval)
+        if (modal && developerLink) {
+          this.setupPopupEventListeners(modal, developerLink, closeBtn)
+        }
+      }
+    }, 100)
+  }
+
+  setupPopupEventListeners(modal, developerLink, closeBtn) {
+    // Open modal when clicking on "Developers" link
+    developerLink.addEventListener('click', (e) => {
+      e.preventDefault()
+      modal.style.display = 'block'
+      document.body.style.overflow = 'hidden' // Prevent scrolling
+    })
+
+    // Close modal when clicking on X button
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none'
+        document.body.style.overflow = 'auto' // Restore scrolling
+      })
+    }
+
+    // Close modal when clicking outside the modal content
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none'
+        document.body.style.overflow = 'auto'
+      }
+    })
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.style.display === 'block') {
+        modal.style.display = 'none'
+        document.body.style.overflow = 'auto'
+      }
+    })
   }
 
   async initialize() {
