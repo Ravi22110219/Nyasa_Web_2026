@@ -504,6 +504,7 @@
   border: 1px solid var(--footer-border);
   position: relative;
   overflow: hidden;
+  margin-top: 10px;
 }
 
 .developer-card::before {
