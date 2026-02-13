@@ -9,7 +9,7 @@ class ComponentLoader {
       visionMission: 'components/vision-mission.html',
       statsSection: 'components/stats-section.html',
       activitiesSection: 'components/activities-preview.html',
-      testimonials: 'components/testimonials.html',
+
       sponsors: 'components/sponsors.html',
       ctaSection: 'components/cta-section.html',
     }
@@ -97,10 +97,7 @@ class ComponentLoader {
         'activities-section-container',
         this.components.activitiesSection,
       )
-      await this.loadComponent(
-        'testimonials-container',
-        this.components.testimonials,
-      )
+
       await this.loadComponent('sponsors-container', this.components.sponsors)
       await this.loadComponent(
         'cta-section-container',

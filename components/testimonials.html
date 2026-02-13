@@ -5,61 +5,158 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testimonial by Ravi</title>
+  <title>Testimonial by Ravi · Swiper coverflow</title>
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../assets/css/testimonials-section.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+    .ytTest-sectionHeader {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .ytTest-sectionHeader .ytTest-h3 {
+      margin-top: 30px;
+      position: relative;
+      display: inline-block;
+      color: rgb(248, 116, 1);
+      font-size: calc(18px + 1vw);
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .ytTest-sectionHeader .ytTest-h3::before {
+      position: relative;
+      content: '';
+      display: inline-block;
+      width: 30px;
+      height: 1px;
+      background-color: #333;
+      margin-right: 10px;
+      margin-bottom: 6px;
+      transition: width 0.5s;
+    }
+
+    .ytTest-sectionHeader .ytTest-h3:hover::before {
+      width: 45px;
+    }
+
+    .ytTest-sectionHeader .ytTest-h1 {
+      font-size: calc(15px + 0.3vw);
+      font-weight: 500;
+      margin-top: 7px;
+      margin-bottom: 30px;
+    }
+
+    .ytTest-collection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .ytTest-swiper {
+      width: 84%;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .ytTest-swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ytTest-content {
+      width: 100%;
+      background-color: #1b1f2a;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      /* consistent with iframe radius */
+    }
+
+    .ytTest-video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      /* 16:9 */
+    }
+
+    .ytTest-video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem;
+    }
+
+    /* responsive tweaks for slide width */
+    @media (max-width: 768px) {
+      .ytTest-content {
+        max-width: 24rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .ytTest-content {
+        max-width: 20rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header class="sectionHeader">
-    <h3>Testimonials</h3>
-    <h1>What Our Volunteers Say About Nyasa</h1>
+  <header class="ytTest-sectionHeader">
+    <h3 class="ytTest-h3">Testimonials</h3>
+    <h1 class="ytTest-h1">What Our Volunteers Say About Nyasa</h1>
   </header>
-  <section class="collection">
 
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="content swiper-slide">
-          <div class="video-container">
+  <section class="ytTest-collection">
+    <div class="ytTest-swiper ytTest-mySwiper">
+      <div class="ytTest-swiper-wrapper">
+        <!-- slide 1 -->
+        <div class="ytTest-content ytTest-swiper-slide">
+          <div class="ytTest-video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/MPX3M6IS4vc?si=2ObM1_CFhI7uR4WZ"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
-        <!-- Slide 2 -->
-        <div class="content swiper-slide">
-          <div class="video-container">
+        <!-- slide 2 -->
+        <div class="ytTest-content ytTest-swiper-slide">
+          <div class="ytTest-video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/MtVUFA1bPQU?si=X-Hp-UmmoMMmIamE"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
-        <!-- Slide 2 -->
-        <div class="content swiper-slide">
-          <div class="video-container">
+        <!-- slide 3 (duplicate of 2 for variety, but keeps loop rich) -->
+        <div class="ytTest-content ytTest-swiper-slide">
+          <div class="ytTest-video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/MtVUFA1bPQU?si=X-Hp-UmmoMMmIamE"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
-
-        <!-- Slide 3 -->
-        <div class="content swiper-slide">
-          <div class="video-container">
+        <!-- slide 4 -->
+        <div class="ytTest-content ytTest-swiper-slide">
+          <div class="ytTest-video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/MPX3M6IS4vc?si=2ObM1_CFhI7uR4WZ"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
-        <!-- Slide 4 -->
-        <div class="content swiper-slide">
-          <div class="video-container">
+        <!-- slide 5 -->
+        <div class="ytTest-content ytTest-swiper-slide">
+          <div class="ytTest-video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/MtVUFA1bPQU?si=X-Hp-UmmoMMmIamE"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -72,7 +169,85 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="../assets/js/testimonial.js"></script>
+  <script>
+    // === SWIPER INIT (all class names prefixed with ytTest-) ===
+    var swiper = new Swiper(".ytTest-mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 5,
+        slideShadows: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        200: {
+          slidesPerView: 1,
+        }
+      }
+    });
+
+    // === AUTO-PLAY CONTROL + VIDEO PLAY/PAUSE DETECTION ===
+    // Updated selectors to use ytTest- prefix
+    function attachVideoListeners(slide) {
+      const iframe = slide.querySelector('iframe');
+      if (!iframe) return;
+
+      const stopAutoplay = () => swiper.autoplay?.stop();
+      const startAutoplay = () => swiper.autoplay?.start();
+
+      // hover on slide container
+      slide.addEventListener('mouseenter', stopAutoplay);
+      slide.addEventListener('mouseleave', startAutoplay);
+
+      // extra safety: when iframe gets mouseenter, stop autoplay
+      iframe.addEventListener('mouseenter', stopAutoplay);
+      // note: we don't add iframe mouseleave because the slide mouseleave will restart.
+    }
+
+    // Attach to existing slides – using updated class names
+    function initSlideControls() {
+      const slides = document.querySelectorAll('.ytTest-swiper-slide');
+      slides.forEach(slide => {
+        // avoid duplicate listeners
+        if (!slide.hasAttribute('data-swiper-listener')) {
+          slide.setAttribute('data-swiper-listener', 'true');
+          attachVideoListeners(slide);
+        }
+      });
+    }
+
+    // initial call
+    initSlideControls();
+
+    // MutationObserver for dynamically added slides (clones) – watch ytTest-swiper-wrapper
+    const observer = new MutationObserver(() => {
+      initSlideControls();
+    });
+    observer.observe(document.querySelector('.ytTest-swiper-wrapper'), { childList: true, subtree: false });
+
+    // also run after swiper init (some clones appear later)
+    swiper.on('init', function () {
+      setTimeout(initSlideControls, 50);
+    });
+
+    // whenever slides change (loop recreation) 
+    swiper.on('slidesUpdated', function () {
+      initSlideControls();
+    });
+  </script>
 </body>
 
 </html>

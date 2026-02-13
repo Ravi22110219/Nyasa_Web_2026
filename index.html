@@ -31,9 +31,119 @@
   <link rel="stylesheet" href="assets/css/vision-mission.css">
   <link rel="stylesheet" href="assets/css/stats-section.css">
   <link rel="stylesheet" href="assets/css/activities-section.css">
-  <link rel="stylesheet" href="assets/css/testimonials-section.css">
+  <!-- <link rel="stylesheet" href="assets/css/testimonials-section.css"> -->
   <link rel="stylesheet" href="assets/css/sponsor.css">
   <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+    }
+
+    .sectionHeader {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .sectionHeader h3 {
+      margin-top: 30px;
+      position: relative;
+      display: inline-block;
+      color: rgb(248, 116, 1);
+      font-size: calc(18px + 1vw);
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .sectionHeader h3::before {
+      position: relative;
+      content: '';
+      display: inline-block;
+      width: 30px;
+      height: 1px;
+      background-color: #333;
+      margin-right: 10px;
+      margin-bottom: 6px;
+      transition: width 0.5s;
+    }
+
+    .sectionHeader h3:hover::before {
+      width: 45px;
+    }
+
+    .sectionHeader h1 {
+      font-size: calc(15px + 0.3vw);
+      font-weight: 500;
+      margin-top: 7px;
+      margin-bottom: 30px;
+    }
+
+    .collection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .swiper {
+      width: 84%;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      width: 100%;
+      background-color: #1b1f2a;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      /* consistent with iframe radius */
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      /* 16:9 */
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem;
+    }
+
+    /* responsive tweaks for slide width */
+    @media (max-width: 768px) {
+      .content {
+        max-width: 24rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content {
+        max-width: 20rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -59,6 +169,62 @@
     <!-- Testimonials Component -->
     <div id="testimonials-container"></div>
 
+    <header class="sectionHeader">
+      <h3>Testimonials</h3>
+      <h1>What Our Volunteers Say About Nyasa</h1>
+    </header>
+
+    <section class="collection">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- slide 1 -->
+          <div class="content swiper-slide">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/MPX3M6IS4vc?si=2ObM1_CFhI7uR4WZ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div class="content swiper-slide">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/MtVUFA1bPQU?si=X-Hp-UmmoMMmIamE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <!-- slide 3 (duplicate of 2 for variety, but keeps loop rich) -->
+          <div class="content swiper-slide">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/MtVUFA1bPQU?si=X-Hp-UmmoMMmIamE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <!-- slide 4 -->
+          <div class="content swiper-slide">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/MPX3M6IS4vc?si=2ObM1_CFhI7uR4WZ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <!-- slide 5 -->
+          <div class="content swiper-slide">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/MtVUFA1bPQU?si=X-Hp-UmmoMMmIamE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Sponsors Component -->
     <div id="sponsors-container"></div>
   </main>
@@ -70,10 +236,99 @@
   <script src="assets/js/component-loader.js"></script>
   <script src="assets/js/activities-carousel.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/testimonial.js"></script>
+  <!-- <script src="assets/js/testimonial.js"></script> -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // === SWIPER INIT ===
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 5,
+        slideShadows: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        200: {
+          slidesPerView: 1,
+        }
+      }
+    });
+
+    // === AUTO-PLAY CONTROL + VIDEO PLAY/PAUSE DETECTION ===
+    // Wait for iframe content to load before attaching 'play'/'pause' listeners
+    function attachVideoListeners(slide) {
+      const iframe = slide.querySelector('iframe');
+      if (!iframe) return;
+
+
+      const stopAutoplay = () => swiper.autoplay?.stop();
+      const startAutoplay = () => swiper.autoplay?.start();
+
+      // hover on slide container
+      slide.addEventListener('mouseenter', stopAutoplay);
+      slide.addEventListener('mouseleave', startAutoplay);
+
+      // additionally, if the iframe is clicked, we assume video becomes playing
+      iframe.addEventListener('load', function () {
+
+      });
+
+      // for better UX: stop when iframe gets focus (user tab or click)
+      iframe.addEventListener('mouseenter', stopAutoplay); // extra safety
+      // note: we don't add iframe mouseleave because the slide mouseleave will restart.
+    }
+
+    // Attach to existing slides and also observe new slides (swiper may rebuild on resize/loop)
+    function initSlideControls() {
+      const slides = document.querySelectorAll('.swiper-slide');
+      slides.forEach(slide => {
+        // avoid duplicate listeners
+        if (!slide.hasAttribute('data-swiper-listener')) {
+          slide.setAttribute('data-swiper-listener', 'true');
+          attachVideoListeners(slide);
+        }
+      });
+    }
+
+    // initial call
+    initSlideControls();
+
+    // swiper sometimes re-renders slides (loop + breakpoint). We listen for slide change or mutation.
+    // Use MutationObserver to catch dynamically added slides (when swiper loop clones slides)
+    const observer = new MutationObserver(() => {
+      initSlideControls();
+    });
+    observer.observe(document.querySelector('.swiper-wrapper'), { childList: true, subtree: false });
+
+    // also run after swiper init (some clones appear later)
+    swiper.on('init', function () {
+      setTimeout(initSlideControls, 50);
+    });
+
+    // whenever slides change (loop recreation) 
+    swiper.on('slidesUpdated', function () {
+      initSlideControls();
+    });
+
+    // --- fallback: clear any duplicated listeners? we use attribute flag.
+  </script>
 
 </body>
 
