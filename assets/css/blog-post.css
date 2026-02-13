@@ -98,6 +98,7 @@
 .author-details p {
   color: var(--text-light);
   font-size: 0.9rem;
+  text-align: justify;
   margin-bottom: 0.25rem;
 }
 
@@ -163,6 +164,7 @@
   color: var(--text-dark);
   margin-bottom: var(--space-lg);
   font-weight: 400;
+  text-align: justify;
 }
 
 .highlight-box {
@@ -277,6 +279,7 @@
 .insight-box p {
   color: #5d4037;
   margin: 0;
+  text-align: justify;
 }
 
 .quote-box {
@@ -290,6 +293,7 @@
   line-height: 1.6;
   box-shadow: var(--shadow-sm);
   position: relative;
+  text-align: justify;
 }
 
 .quote-box::before {
@@ -425,6 +429,7 @@
 .role-content p {
   color: var(--text-light);
   margin: 0;
+  text-align: justify;
 }
 
 /* Team Structure */
@@ -465,6 +470,7 @@
   color: var(--text-light);
   font-size: 0.9rem;
   margin: 0;
+  text-align: justify;
 }
 
 .team-total {
@@ -581,6 +587,7 @@
 .transform-card p {
   color: var(--text-light);
   margin: 0;
+  text-align: justify;
 }
 
 /* Moments Section */
@@ -630,6 +637,7 @@
 .moment-content p {
   color: var(--text-light);
   margin: 0;
+  text-align: justify;
 }
 
 /* Message Section */
@@ -662,6 +670,7 @@
 .callout-box p {
   font-size: 1.3rem;
   margin-bottom: var(--space-md);
+  text-align: justify;
 }
 
 .emphasis {
@@ -896,7 +905,7 @@
 .author-sidebar img {
   width: 80px;
   height: 80px;
-  border-radius: var(--radius-round);
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -910,6 +919,7 @@
   color: var(--text-light);
   font-size: 0.85rem;
   margin: 0;
+  text-align: justify;
 }
 
 .author-role {
@@ -922,6 +932,7 @@
   font-size: 0.9rem;
   line-height: 1.6;
   margin: 0;
+  text-align: justify;
 }
 
 /* Related Posts */
@@ -959,6 +970,7 @@
   color: var(--text-light);
   font-size: 0.85rem;
   margin-bottom: 0.5rem;
+  text-align: justify;
 }
 
 .related-content a {
@@ -1092,8 +1104,9 @@
 }
 
 .comment {
-  padding: var(--space-lg);
+  padding: var(--space-sm);
   border-bottom: 1px solid var(--gray-light);
+  text-align: justify;
 }
 
 .comment:last-child {

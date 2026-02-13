@@ -262,6 +262,7 @@
   color: var(--primary-color);
   box-shadow: var(--shadow-md);
   z-index: 2;
+  text-align: justify;
 }
 
 .timeline-item:nth-child(odd) .timeline-year {
@@ -504,6 +505,7 @@
   color: var(--text-light);
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
 .program-features {
@@ -669,6 +671,7 @@
   line-height: 1.6;
   margin-bottom: 1.5rem;
   flex-grow: 1;
+  text-align: justify;
 }
 
 .event-stats {
