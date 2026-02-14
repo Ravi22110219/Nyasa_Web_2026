@@ -438,9 +438,9 @@
 }
 
 .tables-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-xl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .table-wrapper {

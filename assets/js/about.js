@@ -65,36 +65,29 @@ class AboutPage {
         image: 'assets/images/team/Manas Gharpure.jpg',
       },
       { name: 'Manavi', image: 'assets/images/team/Manavi.jpg' },
+      { name: 'Jannat', image: 'assets/images/team/jannat image.jpeg' },
       {
         name: 'Meshvakumari Chaudhari',
-        image: 'assets/images/team/Meshvakumari Chaudhari.jpg',
+        image: 'assets/images/team/Meshvakumari Chaudhari.jpeg',
       },
       {
         name: 'Modalavalasa Anusha',
         image: 'assets/images/team/Modalavalasa Anusha.jpg',
       },
-      { name: 'Niteesha Rao P', image: 'assets/images/team/Niteesha Rao.jpeg' },
+
       { name: 'Parth Raut', image: 'assets/images/team/Parth Raut.jpeg' },
       { name: 'Rahul Ahirwar', image: 'assets/images/team/Rahul Ahirwar.jpg' },
       { name: 'Rashid Pathan', image: 'assets/images/team/Rashid Pathan.jpg' },
       { name: 'Sachin Kumar', image: 'assets/images/team/Sachin Kumar.jpg' },
-      { name: 'Sai Krishna', image: 'assets/images/team/Sai Krishna.jpg' },
+      { name: 'Sai Krishna', image: 'assets/images/team/Sai Krishna.JPG' },
       {
         name: 'Sambhav Dessai',
         image: 'assets/images/team/Sambhav Dessai.jpg',
       },
-
-      { name: 'Sravya Shree', image: 'assets/images/team/Sravya.jpg' },
-      {
-        name: 'Swami Aryanathan Gantedi',
-        image: 'assets/images/team/Swami Aryanathan Gantedi.jpg',
-      },
-
       {
         name: 'Vaibhav Agrawal',
         image: 'assets/images/team/Vaibhav Agrawal.jpg',
       },
-      { name: 'Yash Sonone', image: 'assets/images/team/Yash Sudhakar.jpg' },
     ]
 
     if (this.organizingGrid) {
