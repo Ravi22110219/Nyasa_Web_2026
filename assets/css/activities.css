@@ -262,7 +262,6 @@
   color: var(--primary-color);
   box-shadow: var(--shadow-md);
   z-index: 2;
-  text-align: justify;
 }
 
 .timeline-item:nth-child(odd) .timeline-year {
@@ -759,7 +758,6 @@
 .impact-card p {
   color: var(--text-light);
   line-height: 1.6;
-  text-align: justify;
 }
 
 /* CTA Section */
