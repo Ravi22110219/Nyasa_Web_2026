@@ -84,6 +84,12 @@ class AboutPage {
         name: 'Sambhav Dessai',
         image: 'assets/images/team/Sambhav Dessai.jpg',
       },
+
+      {
+        name: 'Swami Aryanathan Gantedi',
+        image: 'assets/images/team/Swami Aryanathan Gantedi.jpg',
+      },
+
       {
         name: 'Vaibhav Agrawal',
         image: 'assets/images/team/Vaibhav Agrawal.jpg',
