@@ -76,27 +76,6 @@ class Gallery {
       },
 
       // Community
-      {
-        id: 7,
-        category: 'community',
-        title: 'Community Meeting',
-        date: '2024-03-25',
-        url: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      },
-      {
-        id: 8,
-        category: 'community',
-        title: 'Village Development',
-        date: '2024-03-10',
-        url: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      },
-      {
-        id: 9,
-        category: 'community',
-        title: 'Cultural Event',
-        date: '2024-02-20',
-        url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      },
 
       // Distribution
       {
@@ -108,17 +87,10 @@ class Gallery {
       },
       {
         id: 11,
-        category: 'distribution',
-        title: 'Distribution',
-        date: '2024-03-01',
-        url: 'assets/images/gallery/',
-      },
-      {
-        id: 12,
-        category: 'distribution',
-        title: 'Distribution',
-        date: '2024-02-12',
-        url: 'assets/images/gallery/',
+        category: 'sanjeevani',
+        title: 'Sanjeevani',
+        date: '2025-01-19',
+        url: 'assets/images/gallery/sanjeevani2025.JPG',
       },
 
       // Events
@@ -145,27 +117,20 @@ class Gallery {
       },
 
       // More images for pagination
-      {
-        id: 16,
-        category: 'education',
-        title: 'Science Fair',
-        date: '2024-01-05',
-        url: 'assets/images/gallery/',
-      },
-      {
-        id: 17,
-        category: 'healthcare',
-        title: 'Eye Checkup Camp',
-        date: '2023-12-20',
-        url: 'assets/images/gallery/',
-      },
-      {
-        id: 18,
-        category: 'Winter Camp',
-        title: 'Sun Sine',
-        date: '2023-12-10',
-        url: 'assets/images/gallery/_D5C0127.JPG',
-      },
+      // {
+      //   id: 16,
+      //   category: 'education',
+      //   title: 'Science Fair',
+      //   date: '2024-01-05',
+      //   url: 'assets/images/gallery/',
+      // },
+      // {
+      //   id: 17,
+      //   category: 'healthcare',
+      //   title: 'Eye Checkup Camp',
+      //   date: '2023-12-20',
+      //   url: 'assets/images/gallery/',
+      // },
     ]
   }
 

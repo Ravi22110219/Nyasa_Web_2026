@@ -49,12 +49,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
+
 
     body {
       background-color: #ffffff;
@@ -145,13 +140,40 @@
     /* responsive tweaks for slide width */
     @media (max-width: 768px) {
       .content {
-        max-width: 24rem;
+        max-width: 100%;
       }
     }
 
     @media (max-width: 480px) {
       .content {
-        max-width: 20rem;
+        max-width: 100%;
+      }
+    }
+
+    /* Testimonials responsive - Below 788px show only 1 slide */
+    @media (max-width: 788px) {
+      .swiper {
+        width: 100%;
+      }
+
+      .swiper-slide {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+
+      .swiper-slide-active,
+      .swiper-slide-duplicate-active {
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+
+      .swiper-slide-next,
+      .swiper-slide-prev,
+      .swiper-slide-duplicate-next,
+      .swiper-slide-duplicate-prev {
+        opacity: 0 !important;
+        visibility: hidden !important;
       }
     }
   </style>
@@ -273,11 +295,14 @@
         disableOnInteraction: false,
       },
       breakpoints: {
-        768: {
+        789: {
           slidesPerView: 2,
         },
-        200: {
+        768: {
           slidesPerView: 1,
+        },
+        200: {
+          slidesPerView: 1.2,
         }
       }
     });
