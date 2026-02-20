@@ -238,13 +238,13 @@
 
 .programs-timeline {
   position: relative;
-  max-width: 98%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .timeline-year {
@@ -280,7 +280,6 @@
   overflow: hidden;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
-  min-width: 1000px;
 }
 
 .timeline-content:hover {
@@ -296,6 +295,7 @@
 
 .timeline-image {
   flex: 1;
+
   max-height: 600px;
   position: relative;
   overflow: hidden;
@@ -303,6 +303,7 @@
 
 .timeline-image img {
   width: 100%;
+
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
