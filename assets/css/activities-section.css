@@ -193,6 +193,7 @@
   line-height: 1.6;
   margin-bottom: 1.25rem;
   flex-grow: 1;
+  text-align: justify;
 }
 
 .activity-tags {

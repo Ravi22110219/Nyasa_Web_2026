@@ -24,6 +24,7 @@
   color: rgba(255, 255, 255, 0.9);
   max-width: 600px;
   margin: 0 auto;
+  text-align: justify;
 }
 
 /* Our Story */
@@ -50,6 +51,7 @@
   margin-bottom: var(--space-md);
   line-height: 1.8;
   font-size: 1.1rem;
+  text-align: justify;
 }
 
 .story-image {

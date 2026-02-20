@@ -727,10 +727,15 @@
   .col-title h4 {
     font-size: 1.1rem;
   }
-
+  .copyright-section {
+    width: 100%;
+  }
   .copyright-links {
     display: flex;
-    flex-direction: column;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+
     gap: var(--space-xs);
   }
 

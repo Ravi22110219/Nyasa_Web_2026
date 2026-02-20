@@ -125,6 +125,7 @@
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: var(--text-gray);
+  text-align: justify;
 }
 
 /* Timeline Section */
@@ -179,6 +180,7 @@
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
   border-left: 4px solid var(--primary-color);
 }
 
@@ -283,7 +285,9 @@
   color: var(--text-gray);
   font-size: 1.1rem;
 }
-
+.inside-p {
+  text-align: justify;
+}
 /* Categories Section */
 .categories-section {
   padding: 5rem 0;
