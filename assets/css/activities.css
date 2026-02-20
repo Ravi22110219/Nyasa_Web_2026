@@ -544,7 +544,6 @@
 .timeline-container {
   position: relative;
   width: 100%;
-
   margin: 0 auto;
 }
 
@@ -564,7 +563,7 @@
 
 .timeline-event {
   position: relative;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   width: calc(50% - 60px);
 }
 
@@ -607,7 +606,7 @@
 .event-content {
   background: var(--white);
   border-radius: var(--radius-lg);
-  overflow-x: auto;
+  overflow: hidden;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
 }
@@ -619,19 +618,19 @@
 
 .event-card {
   display: flex;
+  flex-direction: column;
   min-height: 300px;
 }
 
 .event-image {
-  flex: 1;
-  min-width: 250px;
+  width: 100%;
+  height: 350px;
   position: relative;
   overflow: hidden;
 }
 
 .event-image img {
   width: 100%;
-
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
@@ -654,8 +653,7 @@
 }
 
 .event-details {
-  flex: 1;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -677,7 +675,6 @@
   color: var(--text-light);
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  flex-grow: 1;
   text-align: justify;
 }
 
@@ -992,7 +989,7 @@
 
   .program-visual {
     position: relative;
-    height: 250px;
+    height: 300px;
     overflow: hidden;
   }
 }
