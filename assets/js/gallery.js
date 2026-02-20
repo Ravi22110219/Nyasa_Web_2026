@@ -58,7 +58,7 @@ class Gallery {
         category: 'education',
         title: 'Library',
         date: '2026-01-11',
-        url: 'assets/images/gallery/_DSC5262.jpg',
+        url: 'assets/images/landingPagePhotos/DSC_0343.JPG',
       },
       {
         id: 5,
@@ -71,7 +71,7 @@ class Gallery {
         id: 6,
         category: 'education',
         title: 'Winter Camp',
-        date: '2024-02-15',
+        date: '2024-12-24',
         url: 'assets/images/gallery/winter_camp.JPG',
       },
 
