@@ -81,6 +81,10 @@ class AboutPage {
       { name: 'Sachin Kumar', image: 'assets/images/team/Sachin Kumar.jpg' },
       { name: 'Sai Krishna', image: 'assets/images/team/Sai Krishna.JPG' },
       {
+        name: 'Shailesh Verma ',
+        image: 'assets/images/team/Shailesh Verma.jpeg',
+      },
+      {
         name: 'Sambhav Dessai',
         image: 'assets/images/team/Sambhav Dessai.jpg',
       },
