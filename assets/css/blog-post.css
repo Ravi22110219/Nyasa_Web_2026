@@ -8,6 +8,13 @@
   margin-top: 70px;
 }
 
+@media (max-width: 768px) {
+  .blog-post-container {
+    max-width: 98%;
+    padding: 0px 1%;
+  }
+}
+
 .breadcrumb {
   margin-bottom: var(--space-lg);
   font-size: 0.9rem;
@@ -149,6 +156,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .content-wrapper {
+    max-width: 98%;
+  }
+}
+
 .main-content {
   padding-right: var(--space-lg);
 }
@@ -156,6 +169,10 @@
 /* Post Sections */
 .post-section {
   margin-bottom: var(--space-xl);
+}
+
+p {
+  text-align: justify;
 }
 
 .lead {
@@ -187,6 +204,7 @@
   color: var(--primary-color);
   line-height: 1.6;
   margin: 0;
+  text-align: justify;
 }
 
 /* Timeline Navigation */
@@ -385,6 +403,7 @@
   margin: var(--space-lg) 0;
   font-size: 1.1rem;
   color: var(--text-dark);
+  text-align: justify;
 }
 
 .key-learning i {
@@ -530,6 +549,7 @@
   font-size: 1.1rem;
   color: var(--text-dark);
   margin: var(--space-xl) 0;
+  text-align: justify;
 }
 
 .leadership-insight i {
@@ -735,6 +755,10 @@
   margin-bottom: var(--space-xl);
 }
 
+.meaning-box p {
+  text-align: justify;
+}
+
 .meaning-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -784,6 +808,10 @@
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+}
+
+.thank-you p {
+  text-align: justify;
 }
 
 .signature {
@@ -892,6 +920,10 @@
   color: var(--primary-color);
   margin-bottom: var(--space-lg);
   font-size: 1.3rem;
+}
+
+.sidebar-widget p {
+  text-align: justify;
 }
 
 /* Author Widget */
@@ -1187,6 +1219,10 @@
   padding: var(--space-lg);
 }
 
+.article-content p {
+  text-align: justify;
+}
+
 .article-category-small {
   display: inline-block;
   padding: 0.25rem 0.75rem;
@@ -1262,9 +1298,11 @@
     text-align: center;
     gap: var(--space-md);
   }
+
   .timeline-nav {
     display: none;
   }
+
   .timeline-links {
     flex-direction: column;
   }
