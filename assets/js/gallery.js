@@ -49,7 +49,7 @@ class Gallery {
         category: 'education',
         title: 'Library Opening',
         date: '2024-02-10',
-        url: 'assets/images/gallery/_DSC5275.jpg',
+        url: 'assets/images/gallery/DSC5275.jpg',
       },
 
       // Healthcare
