@@ -41,7 +41,7 @@ class AboutPage {
         name: 'Ganivada Lalith',
         image: 'assets/images/team/Ganivada Lalith.jpeg',
       },
-      { name: 'Kovid Parmar', image: 'assets/images/team/Kovid Parmar.jpg' },
+
       {
         name: 'Nupoor Assudani',
         image: 'assets/images/team/Nupoor Assudani.jpg',
