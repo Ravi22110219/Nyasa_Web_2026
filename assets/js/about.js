@@ -60,10 +60,7 @@ class AboutPage {
         name: 'Lakshya Kesarwani',
         image: 'assets/images/team/Lakshya Kesarwani.webp',
       },
-      {
-        name: 'Manas Gharpure',
-        image: 'assets/images/team/Manas Gharpure.jpg',
-      },
+
       { name: 'Manavi', image: 'assets/images/team/Manavi.jpg' },
       { name: 'Jannat', image: 'assets/images/team/jannat image.jpeg' },
       {
@@ -206,7 +203,7 @@ class AboutPage {
                             ${team.members
                               .map(
                                 (member) => `
-                                <li><strong>${member.name}</strong> - ${member.department} (Class of ${member.class})</li>
+                                <li><strong>${member.name}</strong> - ${member.department}</li>
                             `,
                               )
                               .join('')}
@@ -233,7 +230,7 @@ class AboutPage {
                             ${team.members
                               .map(
                                 (member) => `
-                                <p><strong>${member.name}</strong> - ${member.department} (Class of ${member.class})</p>
+                                <p><strong>${member.name}</strong> - ${member.department})</p>
                             `,
                               )
                               .join('')}
