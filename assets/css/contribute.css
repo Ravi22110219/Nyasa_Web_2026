@@ -330,8 +330,12 @@
 }
 
 .contact-person {
-  text-align: left;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.5rem;
   background: var(--light-bg);
   border-radius: var(--radius-md);
   width: 100%;
