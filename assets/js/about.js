@@ -68,6 +68,10 @@ class AboutPage {
         image: 'assets/images/team/Meshvakumari Chaudhari.jpeg',
       },
       {
+        name: 'Shrikant Swami',
+        image: 'assets/images/team/Shrikant Swami.jpeg',
+      },
+      {
         name: 'Modalavalasa Anusha',
         image: 'assets/images/team/Modalavalasa Anusha.jpg',
       },
