@@ -23,7 +23,7 @@ class AboutPage {
   loadOrganizingTeam() {
     const organizingTeam = [
       { name: 'Prabhat Kumar', image: 'assets/images/team/Prabhat.jpg' },
-      { name: 'Pravalli Matta', image: 'assets/images/team/Pravalli Matta.jpg' },
+      { name: 'Pravalli Matta', image: 'assets/images/team/Pravalli Matta.jpeg' },
        
 
       { name: 'Shweta Roshia', image: 'assets/images/team/Shweta_Roshia_24110304.jpeg' },
@@ -49,7 +49,7 @@ class AboutPage {
 
       {
         name: 'Meshvakumari Chaudhari',
-        image: 'assets/images/team/Meshva_Chaudhari.jpeg',
+        image: 'assets/images/team/Meshva_Chaudhari.jpg',
       },
     
       {
@@ -91,10 +91,6 @@ class AboutPage {
       },
 
       {
-        name: 'Ganesh Kamble',
-        image: 'assets/images/team/Ganesh_Kamble.jpg',
-      },
-      {
         name: 'Goral Mashru',
         image: 'assets/images/team/Goral_Mashru_23110119.jpg',
       },
@@ -128,7 +124,7 @@ class AboutPage {
       },
        {
         name: 'Siri Durugapu',
-        image: 'assets/images/team/Siri_Durugapu_24110343.jpg',
+        image: 'assets/images/team/Siri_Durugapu_24110343.png',
       },
        {
         name: 'Sparsh Mishra',
@@ -383,9 +379,7 @@ class AboutPage {
         class: '2022',
         department: 'Civil Engineering',
       },
-      {
-        name: 'Jagruti Patil',
-      },
+
       
       {
         name: 'Akash Unnikrishnan',
