@@ -22,18 +22,20 @@ class AboutPage {
 
   loadOrganizingTeam() {
     const organizingTeam = [
-      { name: 'Prasad Pawar', image: 'assets/images/team/Prasad Pawar.jpg' },
-      { name: 'Jagruti Patil', image: 'assets/images/team/Jagruti Patil.jpg' },
-      { name: 'Ravi Kumawat', image: 'assets/images/team/Ravi Kumawat.jpg' },
-      { name: 'Shweta Roshia', image: 'assets/images/team/Shweta Roshia.jpg' },
+      { name: 'Prabhat Kumar', image: 'assets/images/team/Prabhat.jpg' },
+      { name: 'Pravalli Matta', image: 'assets/images/team/Pravalli Matta.jpg' },
+       {
+        name: 'Falguni Solanki',
+        image: 'assets/images/team/Falguni.jpg',
+      },
+
+      { name: 'Shweta Roshia', image: 'assets/images/team/Shweta_Roshia_24110304.jpeg' },
       { name: 'Darpana Desai', image: 'assets/images/team/Darpana Desai.jpg' },
       {
-        name: 'Abhishek Shekhar Shinde',
-        image: 'assets/images/team/Abhishek Shekhar Shinde.jpg',
+        name: 'Priyanshi Shah',
+        image: 'assets/images/team/Priyanshi Shah.jpg',
       },
-      { name: 'Aditya Gupta', image: 'assets/images/team/Aditya Gupta.jpg' },
-      { name: 'Devesh Kumar', image: 'assets/images/team/Devesh Kumar.jpg' },
-      {
+            {
         name: 'Divyanshu Chandani',
         image: 'assets/images/team/Divyanshu Chandani.jpeg',
       },
@@ -46,59 +48,117 @@ class AboutPage {
         name: 'Nupoor Assudani',
         image: 'assets/images/team/Nupoor Assudani.jpg',
       },
-      {
-        name: 'Priyanshi Shah',
-        image: 'assets/images/team/Priyanshi Shah.jpg',
-      },
-      {
-        name: 'Ruchika Dhawan',
-        image: 'assets/images/team/Ruchika Dhawan 2.jpg',
-      },
-      { name: 'Sejal Paliwal', image: 'assets/images/team/Sejal Paliwal.jpeg' },
+      
 
-      {
-        name: 'Lakshya Kesarwani',
-        image: 'assets/images/team/Lakshya Kesarwani.webp',
-      },
-
-      { name: 'Manavi', image: 'assets/images/team/Manavi.jpg' },
-      { name: 'Jannat', image: 'assets/images/team/jannat image.jpeg' },
       {
         name: 'Meshvakumari Chaudhari',
-        image: 'assets/images/team/Meshvakumari Chaudhari.jpeg',
+        image: 'assets/images/team/Meshva_Chaudhari.jpeg',
       },
-      {
-        name: 'Shrikant Swami',
-        image: 'assets/images/team/Shrikant Swami.jpeg',
-      },
+    
       {
         name: 'Modalavalasa Anusha',
-        image: 'assets/images/team/Modalavalasa Anusha.jpg',
+        image: 'assets/images/team/Modalavalasa_Anusha_%2024110206.jpg',
+      },
+      {
+        name: 'Abhishek Shekhar Shinde',
+        image: 'assets/images/team/Abhishek Shekhar Shinde.jpg',
+      },
+      {
+        name: 'Abhishek S',
+        image: 'assets/images/team/Abhishek_S_23110008.png',
+      },
+      {
+        name: 'Akanksha Rani',
+        image: 'assets/images/team/Akanksha_Rani_25510012.jpg',
+      },
+      {
+        name: 'Ambuj Pandey',
+        image: 'assets/images/team/Ambuj pandey_25510015.png',
+      },
+      {
+        name: 'Anmol',
+        image: 'assets/images/team/Anmol_ 25510017.jpg',
+      },
+      {
+        name: 'Devanshu Dangar',
+        image: 'assets/images/team/Devanshu_Dangar_25110092.jpg',
+      },
+       {
+        name: 'Dipali Singh',
+        image: 'assets/images/team/Dipali singh 25510037.jpg',
+      },
+      
+       {
+        name: 'Ganesh Kamble',
+        image: 'assets/images/team/Ganesh_Kamble.jpg',
       },
 
-      { name: 'Parth Raut', image: 'assets/images/team/Parth Raut.jpeg' },
-      { name: 'Rahul Ahirwar', image: 'assets/images/team/Rahul Ahirwar.jpg' },
-      { name: 'Rashid Pathan', image: 'assets/images/team/Rashid Pathan.jpg' },
-      { name: 'Sachin Kumar', image: 'assets/images/team/Sachin Kumar.jpg' },
-      { name: 'Sai Krishna', image: 'assets/images/team/Sai Krishna.JPG' },
       {
-        name: 'Shailesh Verma ',
-        image: 'assets/images/team/Shailesh Verma.jpeg',
+        name: 'Ganesh Kamble',
+        image: 'assets/images/team/Ganesh_Kamble.jpg',
       },
       {
-        name: 'Sambhav Dessai',
-        image: 'assets/images/team/Sambhav Dessai.jpg',
+        name: 'Goral Mashru',
+        image: 'assets/images/team/Goral_Mashru_23110119.jpg',
+      },
+      {
+        name: 'Hemani Tekwani',
+        image: 'assets/images/team/Hemani Tekwani.png',
+      },
+      {
+        name: 'Jahnavi Patel',
+        image: 'assets/images/team/Jahnavi Patel.jpg',
+      },
+      {
+        name: 'Madhu Kumari',
+        image: 'assets/images/team/Madhu_Kumari_25110182.jpg',
+      },
+      {
+        name: 'S Sanchana',
+        image: 'assets/images/team/S Sanchana _25510104.jpg',
+      },
+       {
+        name: 'Saheel Ganvir',
+        image: 'assets/images/team/SaheelGanvir.25110280.jpg',
+      },
+       {
+        name: 'Sejal Kadgi',
+        image: 'assets/images/team/Sejal_Kadgi_24110323.jpg',
+      },
+       {
+        name: 'Shubham Ruparel',
+        image: 'assets/images/team/Shubham_25110278.jpg',
+      },
+       {
+        name: 'Siri Durugapu',
+        image: 'assets/images/team/Siri_Durugapu_24110343.jpg',
+      },
+       {
+        name: 'Sparsh Mishra',
+        image: 'assets/images/team/Sparsh_Mishra_25510125.jpg',
+      },
+       {
+        name: 'Tannu Gupta',
+        image: 'assets/images/team/Tannu Gupta_25510138.jpg',
+      },
+       {
+        name: 'Tanushree Deshmukh',
+        image: 'assets/images/team/Tanushree_Deshmukh_24110366.jpeg',
+      },
+       {
+        name: 'Tanvi Chalakh',
+        image: 'assets/images/team/Tanvi_Chalakh_24110367.jpg',
+      },
+       {
+        name: 'Ujas Shah',
+        image: 'assets/images/team/Ujas_Shah_24110376.jpg',
       },
 
-      {
-        name: 'Swami Aryanathan Gantedi',
-        image: 'assets/images/team/Swami Aryanathan Gantedi.jpg',
-      },
+    
+      
 
-      {
-        name: 'Vaibhav Agrawal',
-        image: 'assets/images/team/Vaibhav Agrawal.jpg',
-      },
+     
+
     ]
 
     if (this.organizingGrid) {
@@ -120,6 +180,22 @@ class AboutPage {
 
   loadPreviousTeams() {
     const previousTeams = [
+      {
+        year: '2026',
+        type: 'core',
+        members: [
+          {
+            name: 'Pravalli Matta',
+            class: '2023',
+            department: 'Electrical Engineering',
+          },
+          {
+            name: 'Prabhat Kumar',
+            class: '2022',
+            department: 'Physics',
+          },
+        ],
+      },
       {
         year: '2025',
         type: 'core',
