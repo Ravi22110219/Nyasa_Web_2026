@@ -24,10 +24,7 @@ class AboutPage {
     const organizingTeam = [
       { name: 'Prabhat Kumar', image: 'assets/images/team/Prabhat.jpg' },
       { name: 'Pravalli Matta', image: 'assets/images/team/Pravalli Matta.jpg' },
-       {
-        name: 'Falguni Solanki',
-        image: 'assets/images/team/Falguni.jpg',
-      },
+       
 
       { name: 'Shweta Roshia', image: 'assets/images/team/Shweta_Roshia_24110304.jpeg' },
       { name: 'Darpana Desai', image: 'assets/images/team/Darpana Desai.jpg' },
@@ -325,6 +322,8 @@ class AboutPage {
 
   loadPreviousCoreTable() {
     const previousCore = [
+      { name: 'Prabhat Kumar', class: '2022', department: 'Physics' },
+      { name: 'Pravalli Matta', class: '2023', department: 'Electrical' },
       { name: 'Trushika Parmar', class: '2021', department: 'Mechanical' },
       { name: 'Prasad Pawar', class: '2022', department: 'Physics' },
       { name: 'Aishwarya Malve', class: '2022', department: 'Civil' },
@@ -379,6 +378,15 @@ class AboutPage {
 
   loadPreviousOrgTable() {
     const previousOrg = [
+      {
+        name: 'Ravi Kumawat',
+        class: '2022',
+        department: 'Civil Engineering',
+      },
+      {
+        name: 'Jagruti Patil',
+      },
+      
       {
         name: 'Akash Unnikrishnan',
         class: '2024',
