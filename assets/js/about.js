@@ -379,9 +379,7 @@ class AboutPage {
         class: '2022',
         department: 'Civil Engineering',
       },
-      {
-        name: 'Jagruti Patil',
-      },
+
       
       {
         name: 'Akash Unnikrishnan',
