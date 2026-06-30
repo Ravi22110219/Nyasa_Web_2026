@@ -245,6 +245,16 @@ const reportsData = [
     download: 'assets/reports/Nyasa Annual Report 2024-25.pdf',
     date: '2024-25',
   },
+  {
+    id: 304,
+    title: 'Annual Impact Report 2025-26',
+    description:
+      "Complete overview of Nyasa's activities and community impact for the year 2025-26",
+    year: '2025-26',
+    pages: '16',
+    download: 'assets/reports/Nyasa Annual Report_AY 2025-26.pdf',
+    date: '2025-26',
+  },
 ]
 
 // Function to create news cards for blog landing page
