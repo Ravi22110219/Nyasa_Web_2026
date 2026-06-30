@@ -22,16 +22,40 @@ class AboutPage {
 
   loadOrganizingTeam() {
     const organizingTeam = [
+      
+
+      {
+        name: 'Ganesh Kamble',
+        image: 'assets/images/team/Ganesh_Kamble.jpg',
+        role: 'Coordinator, Design Team'
+      },
+      {
+        name: 'Priyanshi Shah',
+        image: 'assets/images/team/Priyanshi Shah.jpg',
+        role: 'Coordinator, Website and Editorial team'
+      },
+      {
+        name: 'Saheel Ganvir',
+        image: 'assets/images/team/SaheelGanvir.25110280.jpg',
+        role: 'Coordinator, Events team'
+      },
+       {
+        name: 'Shubham Ruparel',
+        image: 'assets/images/team/Shubham_25110278.jpg',
+        role: 'Coordinator, Outreach team'
+      },
+       {
+        name: 'Tanvi Chalakh',
+        image: 'assets/images/team/Tanvi_Chalakh_24110367.jpg',
+        role: 'Coordinator, School team'
+      },
+
       { name: 'Prabhat Kumar', image: 'assets/images/team/Prabhat.jpg' },
       { name: 'Pravalli Matta', image: 'assets/images/team/Pravalli Matta.jpeg' },
        
 
       { name: 'Shweta Roshia', image: 'assets/images/team/Shweta_Roshia_24110304.jpeg' },
       { name: 'Darpana Desai', image: 'assets/images/team/Darpana Desai.jpg' },
-      {
-        name: 'Priyanshi Shah',
-        image: 'assets/images/team/Priyanshi Shah.jpg',
-      },
             {
         name: 'Divyanshu Chandani',
         image: 'assets/images/team/Divyanshu Chandani.jpeg',
@@ -56,10 +80,7 @@ class AboutPage {
         name: 'Modalavalasa Anusha',
         image: 'assets/images/team/Modalavalasa_Anusha_%2024110206.jpg',
       },
-      {
-        name: 'Abhishek Shekhar Shinde',
-        image: 'assets/images/team/Abhishek Shekhar Shinde.jpg',
-      },
+      
       {
         name: 'Abhishek S',
         image: 'assets/images/team/Abhishek_S_23110008.png',
@@ -74,7 +95,7 @@ class AboutPage {
       },
       {
         name: 'Anmol',
-        image: 'assets/images/team/Anmol_ 25510017.jpg',
+        image: 'assets/images/team/Anmol_updated.png',
       },
       {
         name: 'Devanshu Dangar',
@@ -85,10 +106,7 @@ class AboutPage {
         image: 'assets/images/team/Dipali singh 25510037.jpg',
       },
       
-       {
-        name: 'Ganesh Kamble',
-        image: 'assets/images/team/Ganesh_Kamble.jpg',
-      },
+       
 
       {
         name: 'Goral Mashru',
@@ -107,21 +125,19 @@ class AboutPage {
         image: 'assets/images/team/Madhu_Kumari_25110182.jpg',
       },
       {
+        name: 'Madhup Sankhla',
+        image: 'assets/images/team/Madhup Sankhla.jpg',
+      },
+      {
         name: 'S Sanchana',
         image: 'assets/images/team/S Sanchana _25510104.jpg',
       },
-       {
-        name: 'Saheel Ganvir',
-        image: 'assets/images/team/SaheelGanvir.25110280.jpg',
-      },
+       
        {
         name: 'Sejal Kadgi',
         image: 'assets/images/team/Sejal_Kadgi_24110323.jpg',
       },
-       {
-        name: 'Shubham Ruparel',
-        image: 'assets/images/team/Shubham_25110278.jpg',
-      },
+      
        {
         name: 'Siri Durugapu',
         image: 'assets/images/team/Siri_Durugapu_24110343.png',
@@ -138,10 +154,11 @@ class AboutPage {
         name: 'Tanushree Deshmukh',
         image: 'assets/images/team/Tanushree_Deshmukh_24110366.jpeg',
       },
-       {
-        name: 'Tanvi Chalakh',
-        image: 'assets/images/team/Tanvi_Chalakh_24110367.jpg',
+      {
+        name: 'Tanvi Soni',
+        image: 'assets/images/team/Tanvi Soni.png',
       },
+      
        {
         name: 'Ujas Shah',
         image: 'assets/images/team/Ujas_Shah_24110376.jpg',
@@ -155,20 +172,35 @@ class AboutPage {
     ]
 
     if (this.organizingGrid) {
-      this.organizingGrid.innerHTML = organizingTeam
-        .map(
-          (member) => `
-                <div class="member-card animate-on-scroll">
-                    <div class="member-image" style="background-image: url('${member.image}')"></div>
-                    <div class="member-info">
-                        <h4>${member.name}</h4>
-                        <p class="member-role">Organizing Team Member</p>
-                    </div>
-                </div>
-            `,
-        )
-        .join('')
+    this.organizingGrid.innerHTML = organizingTeam
+      .map(
+        (member) => `
+              <div class="member-card animate-on-scroll">
+                  <div class="member-image" style="background-image: url('${member.image}')"></div>
+                  <div class="member-info">
+                      <h4>${member.name}</h4>
+                      <p class="member-role">${member.role || 'Organizing Team Member'}</p>
+                  </div>
+              </div>
+          `,
+      )
+      .join('')
     }
+    // if (this.organizingGrid) {
+    //   this.organizingGrid.innerHTML = organizingTeam
+    //     .map(
+    //       (member) => `
+    //             <div class="member-card animate-on-scroll">
+    //                 <div class="member-image" style="background-image: url('${member.image}')"></div>
+    //                 <div class="member-info">
+    //                     <h4>${member.name}</h4>
+    //                     <p class="member-role">Organizing Team Member</p>
+    //                 </div>
+    //             </div>
+    //         `,
+    //     )
+    //     .join('')
+    // }
   }
 
   loadPreviousTeams() {
