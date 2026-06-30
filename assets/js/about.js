@@ -27,7 +27,7 @@ class AboutPage {
       {
         name: 'Ganesh Kamble',
         image: 'assets/images/team/Ganesh_Kamble.jpg',
-        role: 'Coordinator, Design Team'
+        role: 'Coordinator,Social Media and Design Team'
       },
       {
         name: 'Priyanshi Shah',
@@ -52,6 +52,7 @@ class AboutPage {
 
       { name: 'Prabhat Kumar', image: 'assets/images/team/Prabhat.jpg' },
       { name: 'Pravalli Matta', image: 'assets/images/team/Pravalli Matta.jpeg' },
+      { name: 'Prasad Pawar', image: 'assets/images/team/Prasad Pawar.jpg' },
        
 
       { name: 'Shweta Roshia', image: 'assets/images/team/Shweta_Roshia_24110304.jpeg' },
