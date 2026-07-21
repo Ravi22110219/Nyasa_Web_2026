@@ -89,8 +89,8 @@ class Gallery {
         id: 7,
         category: 'healthcare',
         title: 'Sanjeevani Camp',
-        date: '2026-01-11',
-        url: 'assets/images/sanjeevani/DSC07195.JPG',
+        date: '2025-01-19',
+        url: 'assets/images/sanjeevani/sanjeevani%202025%20(2).JPG',
       },
       {
         id: 8,
@@ -171,7 +171,7 @@ class Gallery {
         category: 'community',
         title: 'Summer Camp',
         date: '2026-07-12',
-        url: 'assets/images/gallery/summercamp2026 (5).jpg',
+        url: 'assets/images/gallery/summercamp2026 (5).JPG',
       },
 
       {
@@ -195,7 +195,7 @@ class Gallery {
         category: 'community',
         title: 'Summer Camp',
         date: '2026-07-12',
-        url: 'assets/images/gallery/summercamp2026 (1).jpg',
+        url: 'assets/images/gallery/summercamp2026 (1).JPG',
       },
 
       {
