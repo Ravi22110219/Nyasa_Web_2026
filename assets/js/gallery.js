@@ -29,7 +29,7 @@ class Gallery {
 
   createGalleryImages() {
     this.allImages = [
-      // Education
+      // education
       {
         id: 1,
         category: 'education',
@@ -37,29 +37,40 @@ class Gallery {
         date: '2025-03-15',
         url: 'assets/images/gallery/edu.jpg',
       },
+
       {
         id: 2,
+        category: 'education',
+        title: 'Nyasa school',
+        date: '2026-07-10',
+        url: 'assets/images/slider/School%20photo.jpg',
+      },
+      {
+        id: 3,
         category: 'education',
         title: 'ART & CRAFT',
         date: '2024-02-28',
         url: 'assets/images/gallery/edu1.jpg',
       },
       {
-        id: 3,
+        id: 4,
         category: 'education',
         title: 'Library Opening',
         date: '2024-02-10',
         url: 'assets/images/gallery/DSC5275.jpg',
       },
-
-      // Healthcare
       {
-        id: 4,
+        id: 5,
         category: 'education',
         title: 'Library',
         date: '2026-01-11',
         url: 'assets/images/landingPagePhotos/DSC_0343.JPG',
       },
+
+     
+
+      // healthcare
+      
       {
         id: 5,
         category: 'healthcare',
@@ -69,53 +80,298 @@ class Gallery {
       },
       {
         id: 6,
-        category: 'education',
-        title: 'Winter Camp',
-        date: '2024-12-24',
-        url: 'assets/images/gallery/winter_camp.JPG',
+        category: 'healthcare',
+        title: 'Sanjeevani Camp',
+        date: '2026-01-11',
+        url: 'assets/images/gallery/sanjeevani.JPG',
       },
-
-      // Community
-
-      // Distribution
+      {
+        id: 7,
+        category: 'healthcare',
+        title: 'Sanjeevani Camp',
+        date: '2026-01-11',
+        url: 'assets/images/sanjeevani/DSC07195.JPG',
+      },
+      {
+        id: 8,
+        category: 'healthcare',
+        title: 'Sanjeevani Camp',
+        date: '2024-01-19',
+        url: 'assets/images/sanjeevani/sanjeevani12024.png',
+      },
+      {
+        id: 9,
+        category: 'healthcare',
+        title: 'Sanjeevani Camp',
+        date: '2025-01-19',
+        url: 'assets/images/sanjeevani/sanjeevani12025.JPG',
+      },
       {
         id: 10,
+        category: 'healthcare',
+        title: 'Sanjeevani Camp',
+        date: '2024-01-19',
+        url: 'assets/images/sanjeevani/sanjeevani2024.png',
+      },
+      
+
+      // distribution - distribution drives
+      {
+        id: 11,
         category: 'distribution',
         title: 'Distribution',
         date: '2024-03-18',
         url: 'assets/images/gallery/dist.jpg',
       },
+
+      // community - summer and winter camp
+
       {
-        id: 11,
-        category: 'sanjeevani',
-        title: 'Sanjeevani',
-        date: '2025-01-19',
-        url: 'assets/images/gallery/sanjeevani2025.JPG',
+        id: 12,
+        category: 'community',
+        title: 'Summer Camp',
+        date: '2026-07-12',
+        url: 'assets/images/gallery/summercamp2026 (9).jpg',
       },
 
-      // Events
       {
         id: 13,
+        category: 'community',
+        title: 'Summer Camp',
+        date: '2026-07-12',
+        url: 'assets/images/gallery/summercamp2026 (8).jpg',
+      },
+
+      {
+        id: 14,
+        category: 'community',
+        title: 'Summer Camp',
+        date: '2026-07-12',
+        url: 'assets/images/gallery/summercamp2026 (6).jpg',
+      },
+
+      {
+        id: 15,
+        category: 'community',
+        title: 'Summer Camp',
+        date: '2026-07-12',
+        url: 'assets/images/gallery/summercamp2026 (4).jpg',
+      },
+
+      {
+        id: 16,
+        category: 'community',
+        title: 'Summer Camp',
+        date: '2026-07-12',
+        url: 'assets/images/gallery/summercamp2026 (3).jpg',
+      },
+
+      {
+        id: 17,
+        category: 'community',
+        title: 'Summer Camp',
+        date: '2026-07-12',
+        url: 'assets/images/gallery/summercamp2026 (5).jpg',
+      },
+
+      {
+        id: 18,
+        category: 'community',
+        title: 'Summer Camp',
+        date: '2026-07-12',
+        url: 'assets/images/gallery/summercamp2026 (7).jpg',
+      },
+
+      {
+        id: 19,
+        category: 'community',
+        title: 'Summer Camp',
+        date: '2026-07-12',
+        url: 'assets/images/gallery/summercamp2026 (2).jpg',
+      },
+
+      {
+        id: 20,
+        category: 'community',
+        title: 'Summer Camp',
+        date: '2026-07-12',
+        url: 'assets/images/gallery/summercamp2026 (1).jpg',
+      },
+
+      {
+        id: 21,
+        category: 'community',
+        title: 'Winter Camp',
+        date: '2025-12-25',
+        url: 'assets/images/gallery/wintercamp3.jpg',
+      },
+      {
+        id: 22,
+        category: 'community',
+        title: 'Winter Camp',
+        date: '2025-12-25',
+        url: 'assets/images/gallery/wintercamp2.jpg',
+      },
+      {
+        id: 23,
+        category: 'community',
+        title: 'Winter Camp',
+        date: '2024-12-25',
+        url: 'assets/images/gallery/winter2024.jpg',
+      },
+
+
+
+      // events - events 
+      {
+        id: 24,
         category: 'events',
         title: '26 January',
         date: '2024-01-26',
         url: 'assets/images/gallery/15aug.JPG',
       },
       {
-        id: 14,
+        id: 25,
         category: 'events',
         title: '26 January',
         date: '2024-01-26',
         url: 'assets/images/gallery/15aug1.JPG',
       },
       {
-        id: 15,
+        id: 26,
         category: 'events',
         title: '26 January',
         date: '2024-01-26',
         url: 'assets/images/gallery/15aug2.JPG',
       },
+      {
+        id: 27,
+        category: 'events',
+        title: 'Nyasa Kids Birthday',
+        date: '2026-04-12',
+        url: 'assets/images/gallery/birthday2.jpg',
+      },
+      {
+        id: 28,
+        category: 'events',
+        title: 'Nyasa Kids Birthday',
+        date: '2026-04-12',
+        url: 'assets/images/gallery/birthday.JPG',
+      },
+      {
+        id: 29,
+        category: 'events',
+        title: 'Nyasa Kids Birthday',
+        date: '2026-04-12',
+        url: 'assets/images/gallery/birthday (1).jpg',
+      },
+      {
+        id: 30,
+        category: 'events',
+        title: 'Nyasa Kids Birthday',
+        date: '2026-04-12',
+        url: 'assets/images/gallery/birthday (2).jpg',
+      },
+      {
+        id: 31,
+        category: 'events',
+        title: 'Nyasa Kids Birthday',
+        date: '2026-04-12',
+        url: 'assets/images/gallery/birthday (3).jpg',
+      },
+      {
+        id: 32,
+        category: 'events',
+        title: 'Nyasa Kids Birthday',
+        date: '2026-04-12',
+        url: 'assets/images/gallery/birthday (4).jpg',
+      },
+      
+      
+      
 
+    
+
+      // festivals 
+      {
+        id: 33,
+        category: 'festivals',
+        title: 'Holi',
+        date: '2026-03-14',
+        url: 'assets/images/gallery/holi1.jpg',
+      },
+      {
+        id: 34,
+        category: 'festivals',
+        title: 'Holi',
+        date: '2026-03-14',
+        url: 'assets/images/gallery/holi2.jpg',
+      },
+      {
+        id: 35,
+        category: 'festivals',
+        title: 'Vasant Panchami',
+        date: '2026-01-23',
+        url: 'assets/images/gallery/Vasant_panchami_2026%20(1).jpeg',
+      },
+      {
+        id: 36,
+        category: 'festivals',
+        title: 'Diwali',
+        date: '2025-10-21',
+        url: 'assets/images/gallery/diwali.JPG',
+      },
+      {
+        id: 37,
+        category: 'festivals',
+        title: 'Diwali',
+        date: '2025-10-21',
+        url: 'assets/images/gallery/diwali1.JPG',
+      },
+      {
+        id: 38,
+        category: 'festivals',
+        title: 'Diwali',
+        date: '2025-10-21',
+        url: 'assets/images/gallery/diwali2.JPG',
+      },
+      
+      
+      // otherActivities
+      {
+        id: 39,
+        category: 'otherActivities',
+        title: 'Ganesh Chaturthi event',
+        date: '2025-09-05',
+        url: 'assets/images/gallery/ganeshchaturthi.JPG',
+      },
+      {
+        id: 40,
+        category: 'otherActivities',
+        title: 'Ganesh Chaturthi event',
+        date: '2025-09-05',
+        url: 'assets/images/other/ganesh.jpg',
+      },
+
+          
+
+      {
+        id: 41,
+        category: 'otherActivities',
+        title: 'Astronomy event',
+        date: '2025-11-05',
+        url: 'assets/images/gallery/Taare_Zameen_Par.png',
+      },
+      {
+        id: 41,
+        category: 'otherActivities',
+        title: 'Astronomy event',
+        date: '2025-11-05',
+        url: 'assets/images/other/tarezamipr.jpeg',
+      },
+
+      
+      
       // More images for pagination
       // {
       //   id: 16,
