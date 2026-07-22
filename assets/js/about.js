@@ -22,33 +22,7 @@ class AboutPage {
 
   loadOrganizingTeam() {
     const organizingTeam = [
-      
 
-      {
-        name: 'Ganesh Kamble',
-        image: 'assets/images/team/Ganesh_Kamble.jpg',
-        role: 'Coordinator,Social Media and Design Team'
-      },
-      {
-        name: 'Priyanshi Shah',
-        image: 'assets/images/team/Priyanshi Shah.jpg',
-        role: 'Coordinator, Website and Editorial team'
-      },
-      {
-        name: 'Saheel Ganvir',
-        image: 'assets/images/team/SaheelGanvir.25110280.jpg',
-        role: 'Coordinator, Events team'
-      },
-       {
-        name: 'Shubham Ruparel',
-        image: 'assets/images/team/Shubham_25110278.jpg',
-        role: 'Coordinator, Outreach team'
-      },
-       {
-        name: 'Tanvi Chalakh',
-        image: 'assets/images/team/Tanvi_Chalakh_24110367.jpg',
-        role: 'Coordinator, School team'
-      },
 
       { name: 'Prabhat Kumar', image: 'assets/images/team/Prabhat.jpg' },
       { name: 'Pravalli Matta', image: 'assets/images/team/Pravalli Matta.jpeg' },
