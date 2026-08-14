@@ -154,7 +154,7 @@ class AboutPage {
                   <div class="member-image" style="background-image: url('${member.image}')"></div>
                   <div class="member-info">
                       <h4>${member.name}</h4>
-                      <p class="member-role">${member.role || 'Organizing Team Member'}</p>
+                      ${member.role ? `<p class="member-role">${member.role}</p>` : ''}
                   </div>
               </div>
           `,
